@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!-- <link rel="shortcut icon" href="assets/ico/favicon.ico"> -->
 
-    <title><?php echo $title;?></title>
+    <title>Admin Casino 1988</title>
     <!-- CSS Plugins -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/perfect-scrollbar.min.css">
