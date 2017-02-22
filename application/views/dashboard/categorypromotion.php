@@ -2,7 +2,7 @@
   <div class="col-xs-12">
 
     <h3 class="page-header">
-      รูปแบบ <small>หมวดหมู่โปรโมชั่น</small>
+      กรุณากรอกข้อมูล หมวดหมู่โปรโมชั่น
     </h3>
 
   </div>
@@ -23,7 +23,7 @@
               </div>
 
             </div>
-                <button type="submit" class="btn btn-default">บันทึก</button>
+                <button type="submit" class="btn btn-success">บันทึก</button>
               <?php echo form_close();?>
         </div>
       </div>

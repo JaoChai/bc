@@ -2,7 +2,7 @@
   <div class="col-xs-12">
 
     <h3 class="page-header">
-      รูปแบบ <small>โปรโมชั่น</small>
+      กรุณากรอกข้อมูล โปรโมชั่น
     </h3>
 
   </div>
@@ -12,17 +12,10 @@
   <div class="col-xs-12">
 
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3>โปรโมชั่น</h3>
-      </div>
 
       <div class="panel-body">
 
-        <div class="row col-lg-6">
-          <div class="form-group">
-            <label>Upload Picture Promotion</label>
-            <input type="file">
-          </div>
+        <div class="row col-lg-12">
 
           <div class="form-group">
             <label>เลือกหมวดหมู่ โปรโมชั่น</label>
@@ -46,7 +39,14 @@
           <div class="form-group">
             <div class="form-group">
               <label>รายละเอียด</label>
-              <input class="form-control">
+              <textarea name="editor1" id="editor1" rows="10" cols="80">
+
+              </textarea>
+
+              <script>
+              CKEDITOR.replace( 'editor1' );
+              </script>
+
             </div>
           </div>
 
@@ -67,7 +67,14 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-default">บันทึก</button>
+          <div class="form-group">
+            <label>อัพโหลดรูปภาพ โปรโมชั่น</label>
+            <input type="file" name="userfile">
+            <span class="text-danger"><?php if (isset($error)) { echo $error; } ?></span>
+          </div>
+
+
+          <button type="submit" class="btn btn-success pull-right">บันทึก</button>
 
         </div>
 
@@ -92,8 +99,8 @@
                 <td>100*100</td>
                 <td>Test</td>
                 <td>
-                  <button type="submit" class="btn btn-primary">แก้ไข</button>
-                  <button type="submit" class="btn btn-danger">ลบ</button>
+                  <a href="#" class="btn btn-primary"> <i class="fa fa-edit"></i> แก้ไข </a>
+                  <a href="#" class="btn btn-danger">  <i class="fa fa-trash-o"></i> ลบ </a>
                 </td>
               </tr>
 

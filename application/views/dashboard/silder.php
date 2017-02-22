@@ -2,7 +2,7 @@
   <div class="col-xs-12">
 
     <h3 class="page-header">
-      รูปแบบ <small>ภาพสไลด์</small>
+       ภาพสไลด์
     </h3>
 
   </div>
@@ -28,7 +28,7 @@
             </div>
 
           </div>
-          <button type="submit" class="btn btn-default">บันทึก</button>
+          <button type="submit" class="btn btn-success">บันทึก</button>
           <?php echo form_close();?>
         </div>
       </div>
@@ -68,25 +68,3 @@
 
   </div>
 </div> <!-- / .row -->
-
-<script type="text/javascript">
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-function del(id){
-  var url="<?php echo base_url();?>";
-  //window.location = url+"category/delete/"+del;
-  swal({
-    title: 'ต้องการลบรายการหรือไม่',
-    type: 'warning',
-    showCancelButton: true,
-    cancelButtonText: 'ยกเลิก',
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'ตกลง'
-  }).then(function () {
-    window.location = url+"member/delete/"+id;
-  })
-}
-</script>

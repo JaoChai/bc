@@ -16,4 +16,5 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
   </head>
