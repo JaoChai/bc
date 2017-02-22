@@ -14,14 +14,17 @@
     <div class="panel panel-default">
       <div class="panel-body">
         <div class="row col-lg-6">
+          <?php echo form_open('Promotion/insert_cate');?>
             <div class="form-group">
               <div class="form-group">
                 <label>ชื่อหมวดหมู่</label>
-                <input class="form-control">
+                <input class="form-control" name="cate">
+                <?php echo form_error('cate');?>
               </div>
 
             </div>
                 <button type="submit" class="btn btn-default">บันทึก</button>
+              <?php echo form_close();?>
         </div>
       </div>
     </div> <!-- / .panel -->
@@ -36,16 +39,18 @@
               <th>การกระทำ</th>
             </tr>
           </thead>
+          <?php $num = 1;?>
           <tbody>
+            <?php foreach($result as $row): ?>
             <tr>
-              <td>1</td>
-              <td>ขอขนาดภาพที่ โชว์ 100*100 พอ</td>
+              <td><?php echo $num++;?></td>
+              <td><?php echo $row->cate_name;?></td>
               <td>
-                <button type="submit" class="btn btn-primary">แก้ไข</button>
-                <button type="submit" class="btn btn-danger">ลบ</button>
+                <a href="<?php echo site_url('Promotion/update_cate/'. $row->cate_id);?>" class="btn btn-warning">แก้ไข</a>
+                <a class="btn btn-danger" href="javascript:void(0);" onclick="del(<?php echo $row->cate_id;?>);">ลบ</a>
               </td>
             </tr>
-
+          <?php endforeach;?>
           </tbody>
         </table>
       </div>
@@ -55,9 +60,6 @@
 </div> <!-- / .row -->
 
 <script type="text/javascript">
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 
 function del(id){
   var url="<?php echo base_url();?>";
@@ -71,7 +73,7 @@ function del(id){
     cancelButtonColor: '#d33',
     confirmButtonText: 'ตกลง'
   }).then(function () {
-    window.location = url+"member/delete/"+id;
+    window.location = url+"Promotion/delete_cate/"+id;
   })
 }
 </script>
