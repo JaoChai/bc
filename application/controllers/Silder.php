@@ -24,7 +24,7 @@ class Silder extends CI_Controller {
 	{
 		$config['upload_path'] =  "./uploads/slide/";
 		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size'] = '2048000';
+		$config['max_size'] = '10048000';
 		$config['max_width'] = '';
 		$config['max_height'] = '';
 		$config['overwrite'] = 'TRUE';

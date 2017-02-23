@@ -16,13 +16,17 @@
       <div class="panel-body">
 
         <div class="row col-lg-12">
-          <?php echo form_open_multipart('Promotion/insert');?>
+          <?php echo form_open_multipart('');?>
           <div class="form-group">
             <label>เลือกหมวดหมู่ โปรโมชั่น</label>
             <select class="form-control" name="cate">
               <option value=" ">เลือก</option>
               <?php foreach($getcate as $row): ?>
-                <option value="<?php echo $row->cate_id;?>"><?php echo $row->cate_name;?></option>
+                <?php if($row->cate_id == $result->cate_id){ ?>
+                <option value="<?php echo $row->cate_id;?>" selected><?php echo $row->cate_name;?></option>
+                <?php }else{ ?>
+                  <option value="<?php echo $row->cate_id;?>"><?php echo $row->cate_name;?></option>
+                  <?php } ?>
               <?php endforeach;?>
             </select>
             <?php echo form_error('cate');?>
@@ -31,14 +35,15 @@
           <div class="form-group">
             <div class="form-group">
               <label>ชื่อโปรโมชั่น</label>
-              <input class="form-control" name="title">
+              <input type="hidden" name="img" value="<?php echo $result->pro_newimg;?>">
+              <input class="form-control" name="title" value="<?php echo $result->pro_title;?>">
               <?php echo form_error('title');?>
             </div>
           </div>
 
           <div class="form-group">
             <label>รายละเอียดย่อ</label>
-            <textarea class="form-control" rows="3" name="sub_des"></textarea>
+            <textarea class="form-control" rows="3" name="sub_des"><?php echo $result->pro_sub_des;?></textarea>
             <?php echo form_error('sub_des');?>
           </div>
 
@@ -46,7 +51,7 @@
             <div class="form-group">
               <label>รายละเอียด</label>
               <textarea name="editor1" id="editor1" rows="10" cols="80">
-
+                <?php echo $result->pro_des;?>
               </textarea>
               <?php echo form_error('editor1');?>
               <script>
@@ -60,7 +65,7 @@
             <div class="form-group">
               <label>เวลานับถอยหลัง</label>
               <div class='input-group date' id='datetimepicker5'>
-                   <input type='text' class="form-control" name="date" />
+                   <input type='text' class="form-control" name="date" value="<?php echo date('d-m-Y H:i:s', strtotime($result->pro_date));?>" />
                    <span class="input-group-addon">
                        <span class="glyphicon glyphicon-calendar"></span>
                    </span>
@@ -89,44 +94,6 @@
 
       </div>
 
-      <div class="col-md-12">
-        <?php if($result == ""){ ?>
-          <center><p>ไม่มีข้อมูล</p></center>
-          <?php }else{ ?>
-        <div class="table-responsive">
-          <table class="table table-bordered table-hover">
-            <thead>
-              <tr>
-                <th>ลำดับ</th>
-                <th>หมวดหมู่</th>
-                <th>รูปโปรโมชั่น</th>
-                <th>ชื่อโปรโมชั่น</th>
-                <th>การกระทำ</th>
-              </tr>
-            </thead>
-            <?php $num = 1;?>
-            <tbody>
-              <?php foreach($result as $row): ?>
-              <tr>
-                <td><?php echo $num++;?></td>
-                <td><?php echo $row->cate_name;?></td>
-                <td><img alt="Your uploaded image" src="<?php echo base_url('uploads/promotion/'. $row->pro_newimg); ?>" width="100" height="100"></td>
-                <td><?php echo $row->pro_title;?></td>
-                <?php echo form_open("Promotion/delete");?>
-                <td>
-                  <a href="<?php echo site_url('Promotion/update/'. $row->pro_id);?>" class="btn btn-primary"> <i class="fa fa-edit"></i> แก้ไข </a>
-                        <input type="hidden" name="id" value="<?php echo $row->pro_id;?>">
-                        <input type="hidden" name="path" value="<?php echo $row->pro_imgpath;?>">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> ลบ</button>
-                </td>
-                <?php echo form_close();?>
-              </tr>
-            <?php endforeach;?>
-            </tbody>
-          </table>
-        </div>
-        <?php } ?>
-      </div>
 
 
 
@@ -134,25 +101,3 @@
   </div> <!-- / .panel -->
 </div>
 </div> <!-- / .row -->
-
-<script type="text/javascript">
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-function del(id){
-  var url="<?php echo base_url();?>";
-  //window.location = url+"category/delete/"+del;
-  swal({
-    title: 'ต้องการลบรายการหรือไม่',
-    type: 'warning',
-    showCancelButton: true,
-    cancelButtonText: 'ยกเลิก',
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'ตกลง'
-  }).then(function () {
-    window.location = url+"member/delete/"+id;
-  })
-}
-</script>

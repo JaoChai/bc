@@ -6,6 +6,8 @@ class Home extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('Promotion_model', 'promotion');
+		$this->load->model('Home_model', 'home');
 	}
 
   public function index()
@@ -32,7 +34,12 @@ class Home extends CI_Controller {
 	}
 
 	public function promotion(){
-	  $this->load->view('home/promotion');
+		$data['getcate'] = $this->promotion->getall();
+		$data['special'] = $this->home->getspecial();
+		$data['lotto'] = $this->home->getlotto();
+		$data['member'] = $this->home->getmember();
+		$data['current'] = $this->home->getcurr();
+	  $this->load->view('home/promotion', $data);
 	}
 
 	public function deposit(){

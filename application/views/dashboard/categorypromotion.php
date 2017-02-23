@@ -48,8 +48,8 @@
             <?php foreach($result as $row): ?>
             <tr>
               <td><?php echo $num++;?></td>
-              <td></td>
               <td><?php echo $row->cate_name;?></td>
+              <td><?php echo $row->cate_link;?></td>
               <td>
                 <a href="<?php echo site_url('Promotion/update_cate/'. $row->cate_id);?>" class="btn btn-warning">แก้ไข</a>
                 <a class="btn btn-danger" href="javascript:void(0);" onclick="del(<?php echo $row->cate_id;?>);">ลบ</a>

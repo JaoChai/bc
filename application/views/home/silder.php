@@ -1,21 +1,19 @@
+<?php $sql = "SELECT * FROM slide";
+  $query = $this->db->query($sql);
+?>
+
+
 <div class="mainContent clear">
   <div class="carousel_main_wrapper">
     <div class="carousel_main">
 
+      <?php foreach($query->result() as $row): ?>
 
-
-      <div class="slide" style="background-image: url('<?php echo base_url();?>assets/home/_static/home/img/bannerV3/W88-Home-FortuneDice-ALL.jpg');">
-        <a href=""> </a>
+      <div class="slide" style="background-image: url('<?php echo base_url();?>uploads/slide/<?php echo $row->img_newname;?>');">
+        <a href="<?php echo $row->url;?>"> </a>
       </div>
 
-      <div class="slide" style="background-image: url('<?php echo base_url();?>assets/home/_static/home/img/bannerV3/W88-Home-Casino-CNY2017-ALL.jpg');">
-        <a href=""> </a>
-      </div>
-
-      <div class="slide" style="background-image: url('<?php echo base_url();?>assets/home/_static/home/img/bannerV3/W88-Home-SportsRebate-ALL.jpg');">
-        <a href=""> </a>
-      </div>
-
+    <?php endforeach;?>
 
 
     </div>
