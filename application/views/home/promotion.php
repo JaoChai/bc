@@ -31,6 +31,10 @@ li.message {
 <script src="<?php echo base_url();?>assets/home/_static/_script/jquery.linkselect.min.js"></script>
 <script src="<?php echo base_url();?>assets/home/_static/_script/jquery.carouFredSel.js"></script>
 <script src="<?php echo base_url();?>assets/home/_static/_script/main.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script> -->
+
+
 
 <script>
 $.extend(jQuery.validator.messages, {
@@ -689,7 +693,7 @@ $(".promotion_group .float_right").cleanWhitespace();
 </script>
 </head>
 <body class="white">
-
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
   <div class="header_background">
     <div class="clear"></div>
     <div class="headerContent">
@@ -1660,9 +1664,7 @@ $(function () {
                   <div class="float_right" style="width: 150px;">
                     <h1>โปรโมชั่นนี้ ยังคงใช้ได้ <span id="special"></span></h1>
                     <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
-                    <script>
-                    $('#special').countdown({until: '<?php echo $row->pro_date;?>'});
-                    </script>
+
                   </div>
                   <div class="promotion_group_body">
                     <div class="promotion_group_body_inner">
@@ -1682,6 +1684,11 @@ $(function () {
                     <div class="promotion_group_button" ><i class="sprite_down"></i><i class="sprite_up"></i></div>
                   </div>
                 </div>
+                <script>
+                $(document).ready(function() {
+                $('#special').countdown({until: new Date('<?php echo $row->pro_date;?>')});
+                });
+                </script>
               <?php endforeach;?>
 
 
