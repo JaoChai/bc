@@ -738,36 +738,7 @@ $(".promotion_group .float_right").cleanWhitespace();
 
       <div class="headerMenu clear">
         <div class="mainMenu  clear">
-          <div class="menuContent">
-            <ul id="nav">
-      				<li><a href="index.php" title="หน้าหลัก">
-      					<img src="<?php echo base_url();?>assets/home/_static/img/home.gif" height="28" width="30" alt="หน้าหลัก" /></a></li>
-      								<!-- <li><a class="subcontent " href="Mobile/index.html"
-      									title="เดิมพันผ่านมือถือ" data-subcontent="mobile">
-      									<img src="<?php echo base_url();?>assets/home/_static/img/mobile.gif" style="height: 28px; width: 30px;" height="28" width="30" alt="เดิมพันผ่านมือถือ" />&nbsp;</a></li> -->
-
-      								<!-- Subcontent !-->
-      								 <!-- <li><a class="subcontent " data-subcontent="sports" href="Sports/index.html"
-      									title="กีฬา">
-      									<h2>กีฬา<sup class="hide_for_RMB">ใหม่</sup></h2>
-      								</a>
-      								</li> -->
-
-      				<li><a href="#" title="คาสิโน"><h2>คาสิโน<sup class="hide_for_RMB">ใหม่</sup></h2></a></li>
-      				<li><a href="sports.php" title="กีฬา"><h2>กีฬา<sup class="hide_for_RMB">ใหม่</sup></h2></a></li>
-      				<li><a href="#" title="สล็อต"><h2>สล็อต</h2></a></li>
-      				<li><a href="#" title="ลอตโต้"><h2>ลอตโต้</h2></a></li>
-      				<li><a href="promotion.php" title="โปรโมชั่น"><h2>โปรโมชั่น<sup class="hide_for_RMB">ใหม่</sup></h2></a></li>
-      				<li><a href="#" title="แจ้งฝาก-ถอน"><h2>แจ้งฝาก-ถอน</h2></a></li>
-      				<li><a href="#" title="ผลบอลสด"><h2>ผลบอลสด</h2></a></li>
-      				<li><a href="#" title="ติดต่อเรา"><h2>ติดต่อเรา</h2></a></li>
-
-
-
-      			</ul>
-            <div class="clear"></div>
-
-          </div>
+            <?php $this->load->view ('home/menu');?>
           <style>
           .subcontent_holder h3 {
             display: none;
@@ -1667,15 +1638,11 @@ $(function () {
             <ul class="side_nav nav">
               <!--<li class="active"><a href="#ALL">ทั้งหมด</a></li>-->
 
-              <li><a href="#NEW_MEMBER">สมาชิกใหม่</a></li>
-              <li><a href="#SPECIAL">พิเศษ</a></li>
-              <li><a href="#SPORTS">กีฬา</a></li>
-              <li><a href="#CASINO">คาสิโน</a></li>
-              <li><a href="#">สล็อต</a></li>
-              <!-- <li><a href="#GAMES">เกมส์</a></li> -->
-              <li><a href="#LOTTERY">ล็อตเตอรี</a></li>
-              <li><a href="#VIP">VIP</a></li>
-              <li><a href="#">ผู้ชนะ</a></li>
+              <li><a href="#SPECIAL">โปรโมชั่น พิเศษ</a></li>
+              <li><a href="#LOTTO">โปรโมชั่น หวย</a></li>
+              <li><a href="#NEW_MEMNER">โปรโมชั่น สมาชิกใหม่</a></li>
+              <li><a href="#CURRENT">โปรโมชั่น สมาชิกปัจจุบัน</a></li>
+
             </ul>
           </div>
 
@@ -1683,25 +1650,361 @@ $(function () {
             <div class=" clear">
 
               <div>
-                <div class="promotion_group_header" id="NEW_MEMBER">
-                  สมาชิกใหม่
+                <div class="promotion_group_header" id="SPECIAL">
+                  โปรโมชั่น พิเศษ
                 </div>
 
-                <div class="promotion_group clear WELCOMEBONUS38 grp_LOTTERY" id="WELCOMEBONUS38">
+                <div class="promotion_group clear">
                   <div class="float_right" style="width: 150px;">
-                    <script>
-                    $(function () {
-                      var WELCOMEBONUS38_startDate = new Date("2017/02/01 00:00:00");
-                      var WELCOMEBONUS38_endDate = new Date("2017/02/28 23:59:59");
-                      timerV2("WELCOMEBONUS38", WELCOMEBONUS38_startDate, WELCOMEBONUS38_endDate);
-                    });
-                    </script>
-                    <a href="#" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
+                    <h1>โปรโมชั่นนี้ ยังคงใช้ได้ 23:59:59</h1>
+                    <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
 
                   </div>
                   <div class="promotion_group_body">
                     <div class="promotion_group_body_inner">
-                      <img src="<?php echo base_url();?>assets/home/_static/img/W88-Promotions-Lotto-Welcome-Bonus-TH-small.jpg" />
+                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                      <div class="promotion_title dinpro">
+                        โบนัสยินดีต้อนรับ ล็อตเตอรี่ 38%
+                      </div>
+                      <div class="promotion_content">
+                        พิเศษแบบ Exclusive กับข้อเสนอสุดพิเศษสำหรับสมาชิกใหม่ที่ชื่อชอบในเกมส์ล็อตเตอรี่ รับโบนัสพิเศษล็อตเตอรี่กับเราได้แล้ววันนี้
+                      </div>
+
+                      <div class="promotion_detail">
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>ข้อเสนอโปรโมชั่น:</strong></div>
+                          <ol>
+                            <li>โปรโมชั่นนี้สำหรับสมาชิก ใหม่ทุกท่านที่ทำการลงทะเบียนด้วยสกุลเงิน ไทยบาท, ดอลล่าร์สหรัฐ, หยวน, อินโดนีเซียรูเปียห์, ดองเวียดนาม, ริงกิตมาเลเซีย สกุลเงินเยนญี่ปุ่น และ สกุลเงินวอนเกาหลี สมาชิกสามารถขอรับโบนัสต้อนรับได้หนึ่งประเภทเท่านั้น</li>
+                            <li>โปรโมชั่นนี้เริ่มเวลา 00:00:00 (GMT+8) ของวันที่  <strong>01 กุมภาพันธ์ 2560</strong> ถึงเวลา 23:59:59 (GMT+8) ของวันที่ <strong>28 กุมภาพันธ์ 2560</strong>.</li>
+                            <li>สมาชิกที่ต้องการขอรับโปรโมชั่น จะต้องมีการฝากเงินขั้นต่ำ 250 บาท จึงจะสามารถขอรับโปรโมชั่นนี้ได้ อนุญาตให้ทำการขอรับโบนัสได้ 1 ครั้งต่</li>
+                          </ol>
+                        </div>
+
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>เงื่อนไขและข้อกำหนด: </strong></div>
+                          <ol>
+                            <li>เงื่อนไขยอดเดิมพันหมุนเวียน:<br />
+                              ยอดเงินฝาก รวมกับยอดโบนัส คูณด้วยยอดเดิมพันหมุนเวียน 16 เท่า จึงจะสามารถทำการถอนเงินได้<br />
+                              ตัวอย่าง:<br />
+                              ยอดเงินฝากที่ทำการย้ายไปยังกระเป๋าล็อตเตอรี่ : 1,000 บาท<br />
+                              โบนัสยินดีต้อนรับ 38% = 38% x 1,000 บาท = 380 บาท<br />
+                              ยอดเดิมพันหมุนเวียนที่ต้องการ = (1,000 + 380) x 16 = 22,080 บาท
+                            </li>
+                            <li>โปรดทำการตรวจสอบเพื่อความมั่นใจว่าได้ทำการใส่รหัสโปรโมชั่นในการย้ายเงินไปยังกระเป๋า คลับW พรีเมียร์, คลับอพอลโล, คลับบราวาโด้, คลับดิวิโน่, คลับเกลลาโด้, คลับแมสซิโม, กีฬาอนิเมชั่น & ล็อตเตอรี่</li>
+                            <table border="0" cellspacing="1" cellpadding="5">
+                              <tr class="rowHeader">
+                                <td width="200" align="center"><strong>รหัสโปรโมชั่น</strong></td>
+                                <td width="200" align="center"><strong>ผลิตภัณฑ์</strong></td>
+                                <td width="200" align="center"><strong>จ่ายออกสูงสุด(บาท)</strong></td>
+                              </tr>
+                              <tr class="row1">
+                                <td align="center">W38LT</td>
+                                <td align="center">ล็อตเตอรี่</td>
+                                <td align="center">18,880 </td>
+                              </tr>
+                            </table>
+
+                            <li>ผลเสมอ, การเดิมพันสองฝั่ง, โมฆะ, ยกเลิกเกมส์หรือการเดิมพันที่มีราคาอัตราจ่ายต่ำกว่า 0.5 หรือ 1.5(ในแบบดิซิมอล) จะไม่ถูกนับในยอดเดิมพันหมุนเวียน.</li>
+                            <li>ยอดเงินฝากบวกยอดโบนัสไม่มียอดเดิมพันหมุนเวียน 1 เท่าใน 30 วัน ทางเราจะหักยอดโบนัสออก ในกรณีที่การถอนเงินจะต้องทำตามครบเงื่อนไขของยอดเดิมพันหมุนเวียนก่อน ส่วนโบนัสและยอดเงินเดิมพันที่ชนะการเดิมพันจะถูกหักออกด้วยเช่นกัน </li>
+                            <li>โปรโมชั่นเงินคืนไม่สามารถใช้ร่วมกับโปรโมชั่นนี้ได้</li>
+                            <li>Casino1988 ขอสงวนสิทธิ์ในการยกเลิกโปรโมชั่นนี้ไม่ว่าเวลาเวลาใดก็ตามของสมาชิกทั้งหมดหรือสมาชิกรายบุคคล </li>
+                            <li>ข้อกำหนดทั่วไปและเงื่อนไขการใช้งานโปรโมชั่นของ Casino1988</li>
+
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="promotion_group_button" ><i class="sprite_down"></i><i class="sprite_up"></i></div>
+                  </div>
+                </div>
+
+
+                <div class="promotion_group clear">
+                  <div class="float_right" style="width: 150px;">
+                    <h1>โปรโมชั่นนี้ ยังคงใช้ได้ 23:59:59</h1>
+                    <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
+
+                  </div>
+                  <div class="promotion_group_body">
+                    <div class="promotion_group_body_inner">
+                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                      <div class="promotion_title dinpro">
+                        โบนัสยินดีต้อนรับ ล็อตเตอรี่ 38%
+                      </div>
+                      <div class="promotion_content">
+                        พิเศษแบบ Exclusive กับข้อเสนอสุดพิเศษสำหรับสมาชิกใหม่ที่ชื่อชอบในเกมส์ล็อตเตอรี่ รับโบนัสพิเศษล็อตเตอรี่กับเราได้แล้ววันนี้
+                      </div>
+
+                      <div class="promotion_detail">
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>ข้อเสนอโปรโมชั่น:</strong></div>
+                          <ol>
+                            <li>โปรโมชั่นนี้สำหรับสมาชิก ใหม่ทุกท่านที่ทำการลงทะเบียนด้วยสกุลเงิน ไทยบาท, ดอลล่าร์สหรัฐ, หยวน, อินโดนีเซียรูเปียห์, ดองเวียดนาม, ริงกิตมาเลเซีย สกุลเงินเยนญี่ปุ่น และ สกุลเงินวอนเกาหลี สมาชิกสามารถขอรับโบนัสต้อนรับได้หนึ่งประเภทเท่านั้น</li>
+                            <li>โปรโมชั่นนี้เริ่มเวลา 00:00:00 (GMT+8) ของวันที่  <strong>01 กุมภาพันธ์ 2560</strong> ถึงเวลา 23:59:59 (GMT+8) ของวันที่ <strong>28 กุมภาพันธ์ 2560</strong>.</li>
+                            <li>สมาชิกที่ต้องการขอรับโปรโมชั่น จะต้องมีการฝากเงินขั้นต่ำ 250 บาท จึงจะสามารถขอรับโปรโมชั่นนี้ได้ อนุญาตให้ทำการขอรับโบนัสได้ 1 ครั้งต่</li>
+                          </ol>
+                        </div>
+
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>เงื่อนไขและข้อกำหนด: </strong></div>
+                          <ol>
+                            <li>เงื่อนไขยอดเดิมพันหมุนเวียน:<br />
+                              ยอดเงินฝาก รวมกับยอดโบนัส คูณด้วยยอดเดิมพันหมุนเวียน 16 เท่า จึงจะสามารถทำการถอนเงินได้<br />
+                              ตัวอย่าง:<br />
+                              ยอดเงินฝากที่ทำการย้ายไปยังกระเป๋าล็อตเตอรี่ : 1,000 บาท<br />
+                              โบนัสยินดีต้อนรับ 38% = 38% x 1,000 บาท = 380 บาท<br />
+                              ยอดเดิมพันหมุนเวียนที่ต้องการ = (1,000 + 380) x 16 = 22,080 บาท
+                            </li>
+                            <li>โปรดทำการตรวจสอบเพื่อความมั่นใจว่าได้ทำการใส่รหัสโปรโมชั่นในการย้ายเงินไปยังกระเป๋า คลับW พรีเมียร์, คลับอพอลโล, คลับบราวาโด้, คลับดิวิโน่, คลับเกลลาโด้, คลับแมสซิโม, กีฬาอนิเมชั่น & ล็อตเตอรี่</li>
+                            <table border="0" cellspacing="1" cellpadding="5">
+                              <tr class="rowHeader">
+                                <td width="200" align="center"><strong>รหัสโปรโมชั่น</strong></td>
+                                <td width="200" align="center"><strong>ผลิตภัณฑ์</strong></td>
+                                <td width="200" align="center"><strong>จ่ายออกสูงสุด(บาท)</strong></td>
+                              </tr>
+                              <tr class="row1">
+                                <td align="center">W38LT</td>
+                                <td align="center">ล็อตเตอรี่</td>
+                                <td align="center">18,880 </td>
+                              </tr>
+                            </table>
+
+                            <li>ผลเสมอ, การเดิมพันสองฝั่ง, โมฆะ, ยกเลิกเกมส์หรือการเดิมพันที่มีราคาอัตราจ่ายต่ำกว่า 0.5 หรือ 1.5(ในแบบดิซิมอล) จะไม่ถูกนับในยอดเดิมพันหมุนเวียน.</li>
+                            <li>ยอดเงินฝากบวกยอดโบนัสไม่มียอดเดิมพันหมุนเวียน 1 เท่าใน 30 วัน ทางเราจะหักยอดโบนัสออก ในกรณีที่การถอนเงินจะต้องทำตามครบเงื่อนไขของยอดเดิมพันหมุนเวียนก่อน ส่วนโบนัสและยอดเงินเดิมพันที่ชนะการเดิมพันจะถูกหักออกด้วยเช่นกัน </li>
+                            <li>โปรโมชั่นเงินคืนไม่สามารถใช้ร่วมกับโปรโมชั่นนี้ได้</li>
+                            <li>Casino1988 ขอสงวนสิทธิ์ในการยกเลิกโปรโมชั่นนี้ไม่ว่าเวลาเวลาใดก็ตามของสมาชิกทั้งหมดหรือสมาชิกรายบุคคล </li>
+                            <li>ข้อกำหนดทั่วไปและเงื่อนไขการใช้งานโปรโมชั่นของ Casino1988</li>
+
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="promotion_group_button" ><i class="sprite_down"></i><i class="sprite_up"></i></div>
+                  </div>
+                </div>
+
+                <div class="promotion_group_header" id="LOTTO">
+                  โปรโมชั่น หวย
+                </div>
+
+                <div class="promotion_group clear">
+                  <div class="float_right" style="width: 150px;">
+                    <h1>โปรโมชั่นนี้ ยังคงใช้ได้ 23:59:59</h1>
+                    <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
+
+                  </div>
+                  <div class="promotion_group_body">
+                    <div class="promotion_group_body_inner">
+                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                      <div class="promotion_title dinpro">
+                        โบนัสยินดีต้อนรับ ล็อตเตอรี่ 38%
+                      </div>
+                      <div class="promotion_content">
+                        พิเศษแบบ Exclusive กับข้อเสนอสุดพิเศษสำหรับสมาชิกใหม่ที่ชื่อชอบในเกมส์ล็อตเตอรี่ รับโบนัสพิเศษล็อตเตอรี่กับเราได้แล้ววันนี้
+                      </div>
+
+                      <div class="promotion_detail">
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>ข้อเสนอโปรโมชั่น:</strong></div>
+                          <ol>
+                            <li>โปรโมชั่นนี้สำหรับสมาชิก ใหม่ทุกท่านที่ทำการลงทะเบียนด้วยสกุลเงิน ไทยบาท, ดอลล่าร์สหรัฐ, หยวน, อินโดนีเซียรูเปียห์, ดองเวียดนาม, ริงกิตมาเลเซีย สกุลเงินเยนญี่ปุ่น และ สกุลเงินวอนเกาหลี สมาชิกสามารถขอรับโบนัสต้อนรับได้หนึ่งประเภทเท่านั้น</li>
+                            <li>โปรโมชั่นนี้เริ่มเวลา 00:00:00 (GMT+8) ของวันที่  <strong>01 กุมภาพันธ์ 2560</strong> ถึงเวลา 23:59:59 (GMT+8) ของวันที่ <strong>28 กุมภาพันธ์ 2560</strong>.</li>
+                            <li>สมาชิกที่ต้องการขอรับโปรโมชั่น จะต้องมีการฝากเงินขั้นต่ำ 250 บาท จึงจะสามารถขอรับโปรโมชั่นนี้ได้ อนุญาตให้ทำการขอรับโบนัสได้ 1 ครั้งต่</li>
+                          </ol>
+                        </div>
+
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>เงื่อนไขและข้อกำหนด: </strong></div>
+                          <ol>
+                            <li>เงื่อนไขยอดเดิมพันหมุนเวียน:<br />
+                              ยอดเงินฝาก รวมกับยอดโบนัส คูณด้วยยอดเดิมพันหมุนเวียน 16 เท่า จึงจะสามารถทำการถอนเงินได้<br />
+                              ตัวอย่าง:<br />
+                              ยอดเงินฝากที่ทำการย้ายไปยังกระเป๋าล็อตเตอรี่ : 1,000 บาท<br />
+                              โบนัสยินดีต้อนรับ 38% = 38% x 1,000 บาท = 380 บาท<br />
+                              ยอดเดิมพันหมุนเวียนที่ต้องการ = (1,000 + 380) x 16 = 22,080 บาท
+                            </li>
+                            <li>โปรดทำการตรวจสอบเพื่อความมั่นใจว่าได้ทำการใส่รหัสโปรโมชั่นในการย้ายเงินไปยังกระเป๋า คลับW พรีเมียร์, คลับอพอลโล, คลับบราวาโด้, คลับดิวิโน่, คลับเกลลาโด้, คลับแมสซิโม, กีฬาอนิเมชั่น & ล็อตเตอรี่</li>
+                            <table border="0" cellspacing="1" cellpadding="5">
+                              <tr class="rowHeader">
+                                <td width="200" align="center"><strong>รหัสโปรโมชั่น</strong></td>
+                                <td width="200" align="center"><strong>ผลิตภัณฑ์</strong></td>
+                                <td width="200" align="center"><strong>จ่ายออกสูงสุด(บาท)</strong></td>
+                              </tr>
+                              <tr class="row1">
+                                <td align="center">W38LT</td>
+                                <td align="center">ล็อตเตอรี่</td>
+                                <td align="center">18,880 </td>
+                              </tr>
+                            </table>
+
+                            <li>ผลเสมอ, การเดิมพันสองฝั่ง, โมฆะ, ยกเลิกเกมส์หรือการเดิมพันที่มีราคาอัตราจ่ายต่ำกว่า 0.5 หรือ 1.5(ในแบบดิซิมอล) จะไม่ถูกนับในยอดเดิมพันหมุนเวียน.</li>
+                            <li>ยอดเงินฝากบวกยอดโบนัสไม่มียอดเดิมพันหมุนเวียน 1 เท่าใน 30 วัน ทางเราจะหักยอดโบนัสออก ในกรณีที่การถอนเงินจะต้องทำตามครบเงื่อนไขของยอดเดิมพันหมุนเวียนก่อน ส่วนโบนัสและยอดเงินเดิมพันที่ชนะการเดิมพันจะถูกหักออกด้วยเช่นกัน </li>
+                            <li>โปรโมชั่นเงินคืนไม่สามารถใช้ร่วมกับโปรโมชั่นนี้ได้</li>
+                            <li>Casino1988 ขอสงวนสิทธิ์ในการยกเลิกโปรโมชั่นนี้ไม่ว่าเวลาเวลาใดก็ตามของสมาชิกทั้งหมดหรือสมาชิกรายบุคคล </li>
+                            <li>ข้อกำหนดทั่วไปและเงื่อนไขการใช้งานโปรโมชั่นของ Casino1988</li>
+
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="promotion_group_button" ><i class="sprite_down"></i><i class="sprite_up"></i></div>
+                  </div>
+                </div>
+
+
+                <div class="promotion_group_header" id="NEW_MEMBER">
+                  โปรโมชั่นหวย
+                </div>
+
+                <div class="promotion_group clear">
+                  <div class="float_right" style="width: 150px;">
+                    <h1>โปรโมชั่นนี้ ยังคงใช้ได้ 23:59:59</h1>
+                    <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
+
+                  </div>
+                  <div class="promotion_group_body">
+                    <div class="promotion_group_body_inner">
+                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                      <div class="promotion_title dinpro">
+                        โบนัสยินดีต้อนรับ ล็อตเตอรี่ 38%
+                      </div>
+                      <div class="promotion_content">
+                        พิเศษแบบ Exclusive กับข้อเสนอสุดพิเศษสำหรับสมาชิกใหม่ที่ชื่อชอบในเกมส์ล็อตเตอรี่ รับโบนัสพิเศษล็อตเตอรี่กับเราได้แล้ววันนี้
+                      </div>
+
+                      <div class="promotion_detail">
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>ข้อเสนอโปรโมชั่น:</strong></div>
+                          <ol>
+                            <li>โปรโมชั่นนี้สำหรับสมาชิก ใหม่ทุกท่านที่ทำการลงทะเบียนด้วยสกุลเงิน ไทยบาท, ดอลล่าร์สหรัฐ, หยวน, อินโดนีเซียรูเปียห์, ดองเวียดนาม, ริงกิตมาเลเซีย สกุลเงินเยนญี่ปุ่น และ สกุลเงินวอนเกาหลี สมาชิกสามารถขอรับโบนัสต้อนรับได้หนึ่งประเภทเท่านั้น</li>
+                            <li>โปรโมชั่นนี้เริ่มเวลา 00:00:00 (GMT+8) ของวันที่  <strong>01 กุมภาพันธ์ 2560</strong> ถึงเวลา 23:59:59 (GMT+8) ของวันที่ <strong>28 กุมภาพันธ์ 2560</strong>.</li>
+                            <li>สมาชิกที่ต้องการขอรับโปรโมชั่น จะต้องมีการฝากเงินขั้นต่ำ 250 บาท จึงจะสามารถขอรับโปรโมชั่นนี้ได้ อนุญาตให้ทำการขอรับโบนัสได้ 1 ครั้งต่</li>
+                          </ol>
+                        </div>
+
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>เงื่อนไขและข้อกำหนด: </strong></div>
+                          <ol>
+                            <li>เงื่อนไขยอดเดิมพันหมุนเวียน:<br />
+                              ยอดเงินฝาก รวมกับยอดโบนัส คูณด้วยยอดเดิมพันหมุนเวียน 16 เท่า จึงจะสามารถทำการถอนเงินได้<br />
+                              ตัวอย่าง:<br />
+                              ยอดเงินฝากที่ทำการย้ายไปยังกระเป๋าล็อตเตอรี่ : 1,000 บาท<br />
+                              โบนัสยินดีต้อนรับ 38% = 38% x 1,000 บาท = 380 บาท<br />
+                              ยอดเดิมพันหมุนเวียนที่ต้องการ = (1,000 + 380) x 16 = 22,080 บาท
+                            </li>
+                            <li>โปรดทำการตรวจสอบเพื่อความมั่นใจว่าได้ทำการใส่รหัสโปรโมชั่นในการย้ายเงินไปยังกระเป๋า คลับW พรีเมียร์, คลับอพอลโล, คลับบราวาโด้, คลับดิวิโน่, คลับเกลลาโด้, คลับแมสซิโม, กีฬาอนิเมชั่น & ล็อตเตอรี่</li>
+                            <table border="0" cellspacing="1" cellpadding="5">
+                              <tr class="rowHeader">
+                                <td width="200" align="center"><strong>รหัสโปรโมชั่น</strong></td>
+                                <td width="200" align="center"><strong>ผลิตภัณฑ์</strong></td>
+                                <td width="200" align="center"><strong>จ่ายออกสูงสุด(บาท)</strong></td>
+                              </tr>
+                              <tr class="row1">
+                                <td align="center">W38LT</td>
+                                <td align="center">ล็อตเตอรี่</td>
+                                <td align="center">18,880 </td>
+                              </tr>
+                            </table>
+
+                            <li>ผลเสมอ, การเดิมพันสองฝั่ง, โมฆะ, ยกเลิกเกมส์หรือการเดิมพันที่มีราคาอัตราจ่ายต่ำกว่า 0.5 หรือ 1.5(ในแบบดิซิมอล) จะไม่ถูกนับในยอดเดิมพันหมุนเวียน.</li>
+                            <li>ยอดเงินฝากบวกยอดโบนัสไม่มียอดเดิมพันหมุนเวียน 1 เท่าใน 30 วัน ทางเราจะหักยอดโบนัสออก ในกรณีที่การถอนเงินจะต้องทำตามครบเงื่อนไขของยอดเดิมพันหมุนเวียนก่อน ส่วนโบนัสและยอดเงินเดิมพันที่ชนะการเดิมพันจะถูกหักออกด้วยเช่นกัน </li>
+                            <li>โปรโมชั่นเงินคืนไม่สามารถใช้ร่วมกับโปรโมชั่นนี้ได้</li>
+                            <li>Casino1988 ขอสงวนสิทธิ์ในการยกเลิกโปรโมชั่นนี้ไม่ว่าเวลาเวลาใดก็ตามของสมาชิกทั้งหมดหรือสมาชิกรายบุคคล </li>
+                            <li>ข้อกำหนดทั่วไปและเงื่อนไขการใช้งานโปรโมชั่นของ Casino1988</li>
+
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="promotion_group_button" ><i class="sprite_down"></i><i class="sprite_up"></i></div>
+                  </div>
+                </div>
+
+
+
+                <div class="promotion_group_header" id="NEW_MEMNER">
+                  โปรโมชั่น สมาชิกใหม่
+                </div>
+
+                <div class="promotion_group clear">
+                  <div class="float_right" style="width: 150px;">
+                    <h1>โปรโมชั่นนี้ ยังคงใช้ได้ 23:59:59</h1>
+                    <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
+
+                  </div>
+                  <div class="promotion_group_body">
+                    <div class="promotion_group_body_inner">
+                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                      <div class="promotion_title dinpro">
+                        โบนัสยินดีต้อนรับ ล็อตเตอรี่ 38%
+                      </div>
+                      <div class="promotion_content">
+                        พิเศษแบบ Exclusive กับข้อเสนอสุดพิเศษสำหรับสมาชิกใหม่ที่ชื่อชอบในเกมส์ล็อตเตอรี่ รับโบนัสพิเศษล็อตเตอรี่กับเราได้แล้ววันนี้
+                      </div>
+
+                      <div class="promotion_detail">
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>ข้อเสนอโปรโมชั่น:</strong></div>
+                          <ol>
+                            <li>โปรโมชั่นนี้สำหรับสมาชิก ใหม่ทุกท่านที่ทำการลงทะเบียนด้วยสกุลเงิน ไทยบาท, ดอลล่าร์สหรัฐ, หยวน, อินโดนีเซียรูเปียห์, ดองเวียดนาม, ริงกิตมาเลเซีย สกุลเงินเยนญี่ปุ่น และ สกุลเงินวอนเกาหลี สมาชิกสามารถขอรับโบนัสต้อนรับได้หนึ่งประเภทเท่านั้น</li>
+                            <li>โปรโมชั่นนี้เริ่มเวลา 00:00:00 (GMT+8) ของวันที่  <strong>01 กุมภาพันธ์ 2560</strong> ถึงเวลา 23:59:59 (GMT+8) ของวันที่ <strong>28 กุมภาพันธ์ 2560</strong>.</li>
+                            <li>สมาชิกที่ต้องการขอรับโปรโมชั่น จะต้องมีการฝากเงินขั้นต่ำ 250 บาท จึงจะสามารถขอรับโปรโมชั่นนี้ได้ อนุญาตให้ทำการขอรับโบนัสได้ 1 ครั้งต่</li>
+                          </ol>
+                        </div>
+
+                        <div class="paragraph">
+                          <div class="subtitle"><strong>เงื่อนไขและข้อกำหนด: </strong></div>
+                          <ol>
+                            <li>เงื่อนไขยอดเดิมพันหมุนเวียน:<br />
+                              ยอดเงินฝาก รวมกับยอดโบนัส คูณด้วยยอดเดิมพันหมุนเวียน 16 เท่า จึงจะสามารถทำการถอนเงินได้<br />
+                              ตัวอย่าง:<br />
+                              ยอดเงินฝากที่ทำการย้ายไปยังกระเป๋าล็อตเตอรี่ : 1,000 บาท<br />
+                              โบนัสยินดีต้อนรับ 38% = 38% x 1,000 บาท = 380 บาท<br />
+                              ยอดเดิมพันหมุนเวียนที่ต้องการ = (1,000 + 380) x 16 = 22,080 บาท
+                            </li>
+                            <li>โปรดทำการตรวจสอบเพื่อความมั่นใจว่าได้ทำการใส่รหัสโปรโมชั่นในการย้ายเงินไปยังกระเป๋า คลับW พรีเมียร์, คลับอพอลโล, คลับบราวาโด้, คลับดิวิโน่, คลับเกลลาโด้, คลับแมสซิโม, กีฬาอนิเมชั่น & ล็อตเตอรี่</li>
+                            <table border="0" cellspacing="1" cellpadding="5">
+                              <tr class="rowHeader">
+                                <td width="200" align="center"><strong>รหัสโปรโมชั่น</strong></td>
+                                <td width="200" align="center"><strong>ผลิตภัณฑ์</strong></td>
+                                <td width="200" align="center"><strong>จ่ายออกสูงสุด(บาท)</strong></td>
+                              </tr>
+                              <tr class="row1">
+                                <td align="center">W38LT</td>
+                                <td align="center">ล็อตเตอรี่</td>
+                                <td align="center">18,880 </td>
+                              </tr>
+                            </table>
+
+                            <li>ผลเสมอ, การเดิมพันสองฝั่ง, โมฆะ, ยกเลิกเกมส์หรือการเดิมพันที่มีราคาอัตราจ่ายต่ำกว่า 0.5 หรือ 1.5(ในแบบดิซิมอล) จะไม่ถูกนับในยอดเดิมพันหมุนเวียน.</li>
+                            <li>ยอดเงินฝากบวกยอดโบนัสไม่มียอดเดิมพันหมุนเวียน 1 เท่าใน 30 วัน ทางเราจะหักยอดโบนัสออก ในกรณีที่การถอนเงินจะต้องทำตามครบเงื่อนไขของยอดเดิมพันหมุนเวียนก่อน ส่วนโบนัสและยอดเงินเดิมพันที่ชนะการเดิมพันจะถูกหักออกด้วยเช่นกัน </li>
+                            <li>โปรโมชั่นเงินคืนไม่สามารถใช้ร่วมกับโปรโมชั่นนี้ได้</li>
+                            <li>Casino1988 ขอสงวนสิทธิ์ในการยกเลิกโปรโมชั่นนี้ไม่ว่าเวลาเวลาใดก็ตามของสมาชิกทั้งหมดหรือสมาชิกรายบุคคล </li>
+                            <li>ข้อกำหนดทั่วไปและเงื่อนไขการใช้งานโปรโมชั่นของ Casino1988</li>
+
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="promotion_group_button" ><i class="sprite_down"></i><i class="sprite_up"></i></div>
+                  </div>
+                </div>
+
+
+
+                <div class="promotion_group_header" id="CURRENT">
+                  โปรโมชั่น ปัจจุบัน
+                </div>
+
+                <div class="promotion_group clear">
+                  <div class="float_right" style="width: 150px;">
+                    <h1>โปรโมชั่นนี้ ยังคงใช้ได้ 23:59:59</h1>
+                    <a href="<?php site_url('home/register');?>" type="register" class="promo_join_btn center dinpro">คลิกสมัคร</a>
+
+                  </div>
+                  <div class="promotion_group_body">
+                    <div class="promotion_group_body_inner">
+                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
                       <div class="promotion_title dinpro">
                         โบนัสยินดีต้อนรับ ล็อตเตอรี่ 38%
                       </div>

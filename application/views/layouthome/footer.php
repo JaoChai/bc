@@ -1,7 +1,10 @@
 <div class="clear"></div>
 <br />
 
+
+
 <div class="footer_background">
+
   <div class="footercontent clear">
     <br />
     <div class="float_right footerlink">
@@ -21,7 +24,7 @@
       font-size: 12px;
     }
     </style>
-    
+
     <div class="footerlink">
       <ul>
         <li><a href="#">การันตีความปลอดภัย</a></li><li>|</li>

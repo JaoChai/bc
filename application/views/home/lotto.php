@@ -1100,14 +1100,14 @@
 </div>-->
 
 <div class="float column">
-  <img src="<?php echo base_url();?>assets/home/_static/casino/img/new-casino-gclubmobile.jpg" />
+  <img src="<?php echo base_url();?>assets/home/_static/lottery/img/new-casino-ltbbb.jpg" />
   <div class="bottom_text">
     <div class="opacity_background"></div>
     <div class="opacity_content" style="padding: 10px;">
-      <div class="title">GCLUB MOBILE</div>
-      <div style="height: auto;">Gclub คาสิโนออนไลน์ Casino1988 ยินดีต้อนรับสมาชิกทุกท่านที่ชื่นชอบเล่นเกม จีคลีบ คาสิโนออนไลน์ Gclub มีเกมส์ให้เล่นมากมาย</div>
+      <div class="title">LT BBB</div>
+      <div style="height: auto;">แทงหวยออนไลน์ กับ LTBBB หรือ LOTTO3189 ใหม่ล่าสุดจากทางเว็บ ขอแนะนำท่านสมาชิกที่ชอบการเสี่ยงดวงทางหวย</div>
       <hr class="hide" />
-      <a href="gclubmobile.php" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>

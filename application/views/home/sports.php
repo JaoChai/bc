@@ -826,7 +826,7 @@
       <div class="title">SBOBET</div>
       <div style="height: auto;">เว็บแทงบอล พนันบอลออนไลน์ที่ได้รับความนิยมสูงสุด การันตีความเชื่่อถือด้วยยอดแทงเดิมพันจากนักเล่นพนันทั่วโลก SBOBET</div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('sports/sbobet');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -839,7 +839,7 @@
       <div class="title">IBCBET</div>
       <div style="height: auto;">IBCBET เว็บไซต์มาแรงอันดับหนึ่งของการ ทายผลฟุตบอล ท่านสามารถร่วมสนุกกันแบบง่ายๆ กับ IBCBET</div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที  <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('sports/ibcbet');?>" class="link_blue hide">เล่นทันที  <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -854,7 +854,7 @@
         M8BET เป็นอีก Web Site ที่ให้บริการรับพนันกีฬาออนไลน์ หวยออนไลน์ หวยไทย, จีน, อินโดผ่านเว็บ MMMBET
       </div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('sports/m8bet');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -864,12 +864,12 @@
   <div class="bottom_text">
     <div class="opacity_background"></div>
     <div class="opacity_content" style="padding: 10px;">
-      <div class="title">M8BET แทงบอล 3M หวยออนไลน์</div>
+      <div class="title">คาสิโนลาว Savan Vegas สะหวันเวกัส</div>
       <div style="height: auto;">
-        M8BET เป็นอีก Web Site ที่ให้บริการรับพนันกีฬาออนไลน์ หวยออนไลน์ หวยไทย, จีน, อินโดผ่านเว็บ MMMBET
+        คาสิโนลาว Savan Vegas หรือเรียกในนาม คาสิโนออนไลน์ใหม่ คือ SavanVegas999 ซึ่งตั้งอยู่กับบ่อนคาสิโน Savan Vegas ประเทศลาว
       </div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/savan');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>

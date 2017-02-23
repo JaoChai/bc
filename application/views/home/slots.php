@@ -1096,7 +1096,7 @@
       <div class="title">GCLUB CASINO</div>
       <div style="height: auto;">Gclub คาสิโนออนไลน์ Casino1988 ยินดีต้อนรับสมาชิกทุกท่านที่ชื่นชอบเล่นเกม จีคลีบ คาสิโนออนไลน์ Gclub มีเกมส์ให้เล่นมากมาย</div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/gclub');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -1109,7 +1109,7 @@
       <div class="title">GOLDCLUB SLOTS</div>
       <div style="height: auto;">Goldclub Slot สล็อตออนไลน์ รูปแบบใหม่ ทันสมัย กราฟฟิกสวยงามอลังการณ์ ดนตรีประกอบยอดเยี่ยม ท่านจะได้สัมผัสกับเกมส์สล็อตออนไลน์เหมือนจริง</div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/goldclub');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -1123,7 +1123,7 @@
       <div class="title">ROYAL RUBY CASINO</div>
       <div style="height: auto;">Ruby888 คาสิโนออนไลน์ พนันออนไลน์ ท่านจะได้สัมผัสรูปแบบเกมส์ออนไลน์รูปแบบใหม่ไม่ซ้ำใคร Ruby888 มีเกมส์มัน ๆ ให้ท่านได้ร่วมสนุกมากมาย </div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/ruby888');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -1137,7 +1137,7 @@
       <div class="title">HTV999 CASINO</div>
       <div style="height: auto;">HTV999 ฮาเตียนวีกัสสรีสอร์ตคาสิโนออนไลน์แห่งใหม่ ศูนย์รวมความบันเทิงครบวงจร จากคาสิโนชั้นนำ ที่สวยงามที่สุดของเอเชียตะวันออกเฉียงใต้ </div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/htv');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -1151,7 +1151,7 @@
       <div class="title">SAVAN VEGAS CASINO</div>
       <div style="height: auto;">คาสิโนลาว Savan Vegas หรือเรียกในนาม คาสิโนออนไลน์ใหม่ คือ SavanVegas999 ซึ่งตั้งอยู่กับบ่อนคาสิโน Savan Vegas ประเทศลาว </div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/savan');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
@@ -1165,7 +1165,7 @@
       <div class="title">GCLUB MOBILE</div>
       <div style="height: auto;">Gclub คาสิโนออนไลน์ Casino1988 ยินดีต้อนรับสมาชิกทุกท่านที่ชื่นชอบเล่นเกม จีคลีบ คาสิโนออนไลน์ Gclub มีเกมส์ให้เล่นมากมาย</div>
       <hr class="hide" />
-      <a href="#" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
+      <a href="<?php echo site_url('content/gclubmobile');?>" class="link_blue hide">เล่นทันที <i class="sprite_blue_arrow"></i></a>
     </div>
   </div>
 </div>
