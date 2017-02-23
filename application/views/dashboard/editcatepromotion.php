@@ -23,7 +23,7 @@
 
               <div class="form-group">
                 <label>Link</label>
-                <input class="form-control" name="linkcate">
+                <input class="form-control" name="linkcate" value="<?php echo $result->cate_link;?>">
               </div>
 
 
