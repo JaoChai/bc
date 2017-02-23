@@ -15,14 +15,17 @@
       <div class="panel-body">
         <div class="row col-lg-6">
           <?php echo form_open('Promotion/insert_cate');?>
-            <div class="form-group">
+
               <div class="form-group">
                 <label>ชื่อหมวดหมู่</label>
                 <input class="form-control" name="cate">
                 <?php echo form_error('cate');?>
               </div>
 
-            </div>
+                <div class="form-group">
+                  <label>Link</label>
+                  <input class="form-control" name="linkcate">
+                </div>
                 <button type="submit" class="btn btn-success">บันทึก</button>
               <?php echo form_close();?>
         </div>
@@ -36,6 +39,7 @@
             <tr>
               <th>ลำดับ</th>
               <th>ชื่อโปรโมชั่น</th>
+              <th>ลิ้ง</th>
               <th>การกระทำ</th>
             </tr>
           </thead>
@@ -44,6 +48,7 @@
             <?php foreach($result as $row): ?>
             <tr>
               <td><?php echo $num++;?></td>
+              <td></td>
               <td><?php echo $row->cate_name;?></td>
               <td>
                 <a href="<?php echo site_url('Promotion/update_cate/'. $row->cate_id);?>" class="btn btn-warning">แก้ไข</a>
