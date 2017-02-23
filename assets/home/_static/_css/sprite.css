@@ -1,0 +1,313 @@
+﻿.sprite_announcement,.sprite_announcement_on,.sprite_blue_arrow,.sprite_content_divider,.sprite_correct,.sprite_dark_blue_arrow,
+.sprite_down,.sprite_error,.sprite_grey_arrow,.sprite_header_divider,.sprite_light_blue_arrow,.sprite_live_help,.sprite_logo,
+.sprite_logo.zh-cn,.sprite_private_message,.sprite_private_message_on,.sprite_timer_divider,.sprite_up,.sprite_white_arrow,
+.sprite_opener_arrow,.main_arrow_left_off,.main_arrow_left_on,
+.main_arrow_right_off,.main_arrow_right_on,
+.sprite_mobile
+{
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+	vertical-align: middle;
+	padding: 0 1px;
+}
+
+.sprite_announcement{ background-position: 0 0; width: 26px; height: 22px; } 
+.sprite_announcement_on{ background-position: -36px 0; width: 26px; height: 22px; } 
+.sprite_blue_arrow{ background-position: -72px 0; width: 5px; height: 14px; } 
+.sprite_content_divider{ background-position: -87px 0; width: 3px; height: 16px; } 
+.sprite_correct{ background-position: -100px 0; width: 16px; height: 16px; } 
+.sprite_dark_blue_arrow{ background-position: -126px 0; width: 5px; height: 14px; } 
+.sprite_down{ background-position: -141px 0; width: 11px; height: 8px; } 
+.sprite_error{ background-position: -162px 0; width: 16px; height: 16px; } 
+.sprite_grey_arrow{ background-position: -188px 0; width: 5px; height: 14px; } 
+.sprite_header_divider{ background-position: -203px 0; width: 469px; height: 16px; } 
+.sprite_light_blue_arrow{ background-position: -682px 0; width: 5px; height: 14px; } 
+.sprite_live_help{ background-position: -697px 0; width: 26px; height: 22px; } 
+.sprite_logo{ background-position: -733px 0; width: 255px; height: 52px; } 
+.sprite_logo.zh-cn{ background-position: -992px 0; width: 333px; height: 52px; } 
+.sprite_private_message{ background-position: -1335px 0; width: 26px; height: 22px; } 
+.sprite_private_message_on{ background-position: -1371px 0; width: 26px; height: 22px; } 
+.sprite_timer_divider{ background-position: -1407px 0; width: 1px; height: 17px; } 
+.sprite_up{ background-position: -1418px 0; width: 11px; height: 8px; } 
+.sprite_white_arrow{ background-position: -1439px 0; width: 5px; height: 14px; } 
+.sprite_mobile{ background-position: -1409px -26px; width: 26px; height: 22px; } 
+
+.sprite_blue_arrow, .sprite_dark_blue_arrow, .sprite_grey_arrow, .sprite_light_blue_arrow,.sprite_white_arrow {
+	margin-left: 2px;
+	background-position-y: -1px;
+	*background-position-y: 2px;
+}
+
+.sprite_header_divider{ background-position: -203px -5px; width: 469px; height: 11px; } 
+
+.sprite_content_divider{ margin: 0 2px;} 
+.sprite_content_divider.right_no_padding{ margin: 0;} 
+
+[class^="c_"], [class*=" c_"] { background: url('img/cd.png')  no-repeat  top left;
+    display: inline-block;
+	vertical-align: middle;
+	width: 17px; height: 17px; 
+}
+.c_1 { background-position: 0px 0px; }
+.c_2 { background-position: -18px 0px; }
+.c_3 { background-position: -36px 0px; }
+.c_4 { background-position: -54px 0px; }
+.c_5 { background-position: -72px 0px;}
+.c_6 { background-position: -90px 0px; }
+.c_7 { background-position: -108px 0px; }
+.c_8 { background-position: -126px 0px; }
+.c_9 { background-position: 0px -18px; }
+.c_10 { background-position: -18px -18px; }
+.c_11 { background-position: -36px -18px; }
+.c_12 { background-position: -54px -18px; }
+.c_13 { background-position: -72px -18px; }
+.c_14 { background-position: -90px -18px; }
+.c_15 { background-position: -108px -18px; }
+.c_16 { background-position: -126px -18px; }
+.c_17 { background-position: 0px -36px; }
+.c_18 { background-position: -18px -36px; }
+.c_19 { background-position: -36px -36px; }
+.c_20 { background-position: -54px -36px; }
+.c_21 { background-position: -72px -36px; }
+.c_22 { background-position: -90px -36px; }
+.c_23 { background-position: -108px -36px; }
+.c_24 { background-position: -126px -36px; }
+.c_25 { background-position: 0px -54px; }
+.c_26 { background-position: -18px -54px; }
+.c_27 { background-position: -36px -54px; }
+.c_28 { background-position: -54px -54px; }
+.c_29 { background-position: -72px -54px; }
+.c_30 { background-position: -90px -54px; }
+.c_31 { background-position: -108px -54px; }
+.c_32 { background-position: -126px -54px; }
+
+
+
+[class^="flag_"], [class*=" flag_"], .color_grey, .color_white {
+    background-image: url("img/flag.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+	vertical-align: middle;
+	padding: 0 1px;
+}
+.flag_en-us{ background-position: 0 0; width: 18px; height: 18px; } 
+.flag_id-id{ background-position: -64px 0; width: 18px; height: 18px; } 
+.flag_ja-jp{ background-position: -128px 0; width: 18px; height: 18px; } 
+.flag_km-kh{ background-position: -192px 0; width: 18px; height: 18px; } 
+.flag_ko-kr{ background-position: -256px 0; width: 18px; height: 18px; } 
+.flag_th-th{ background-position: -320px 0; width: 18px; height: 18px; } 
+.flag_vi-vn{ background-position: -384px 0; width: 18px; height: 18px; } 
+.flag_zh-cn{ background-position: -448px 0; width: 18px; height: 18px; }
+
+.color_grey, .color_white {
+	background-position: -540px 0; width: 18px; height: 18px;
+}
+.color_white {
+	background-position: -512px 0;
+}
+
+.logo_1,.logo_2,.logo_3,.logo_4,.logo_5,.logo_6,.logo_7,.logo_8,.logo_9,.logo_10,
+.logo_11,.logo_12,.logo_13,.logo_14,.logo_15,.logo_16,.logo_17,.logo_18,.logo_19,.logo_20,
+.logo_21,.logo_22,.logo_23,.logo_24,.logo_25,.logo_26,.logo_27,.logo_28,.logo_29,.logo_30,
+.logo_31,.logo_32,.logo_33,.logo_34,.logo_35,.logo_36,.logo_37,.logo_38,.logo_39,.logo_40,
+.logo_41,.logo_42,.logo_43,.logo_44,.logo_45,.logo_46,.logo_47,.logo_48,.logo_49,.logo_50,
+.logo_51,.logo_52,.logo_53,.logo_54,.logo_55,.logo_56,.logo_57,.logo_58,.logo_59,.logo_60,
+.logo_61,.logo_62,.logo_63,.logo_64,.logo_65,.logo_66,.logo_67,.logo_68,.logo_69,.logo_70,
+.logo_71,.logo_72,.logo_73{
+	display:inline-block;width: 92px; height: 42px; 
+	behavior: url('ie6png/iepngfix.htc');
+	background-image: url("img/banklogo.png");
+    background-repeat: no-repeat;
+	vertical-align: middle;
+    padding: 0px;
+}
+.logo_1{ background-position: -10px -57px; width: 92px; height: 42px; }
+.logo_2{ background-position: -10px -104px; width: 92px; height: 42px; }
+.logo_3{ background-position: -10px -151px; width: 92px; height: 42px; }
+.logo_4{ background-position: -10px -198px; width: 92px; height: 42px; }
+.logo_5{ background-position: -10px -245px; width: 92px; height: 42px; }
+.logo_6{ background-position: -10px -292px; width: 92px; height: 42px; }
+.logo_7{ background-position: -10px -339px; width: 92px; height: 42px; }
+.logo_8{ background-position: -10px -386px; width: 92px; height: 42px; }
+.logo_9{ background-position: -10px -433px; width: 92px; height: 42px; }
+.logo_10{ background-position: -10px -480px; width: 92px; height: 42px; }
+.logo_11{ background-position: -10px -527px; width: 92px; height: 42px; }
+.logo_12{ background-position: -10px -574px; width: 92px; height: 42px; }
+.logo_13{ background-position: -10px -621px; width: 92px; height: 42px; }
+.logo_14{ background-position: -10px -668px; width: 92px; height: 42px; }
+.logo_15{ background-position: -10px -715px; width: 92px; height: 42px; }
+.logo_16{ background-position: -10px -762px; width: 92px; height: 42px; }
+.logo_17{ background-position: -10px -809px; width: 92px; height: 42px; }
+.logo_18{ background-position: -10px -856px; width: 92px; height: 42px; }
+.logo_19{ background-position: -10px -903px; width: 92px; height: 42px; }
+.logo_20{ background-position: -10px -950px; width: 92px; height: 42px; }
+.logo_21{ background-position: -10px -997px; width: 92px; height: 42px; }
+.logo_22{ background-position: -10px -1044px; width: 92px; height: 42px; }
+.logo_23{ background-position: -10px -1091px; width: 92px; height: 42px; }
+.logo_24{ background-position: -10px -1138px; width: 92px; height: 42px; }
+.logo_25{ background-position: -10px -1185px; width: 92px; height: 42px; }
+.logo_26{ background-position: -10px -1232px; width: 92px; height: 42px; }
+.logo_27{ background-position: -10px -1279px; width: 92px; height: 42px; }
+.logo_28{ background-position: -10px -1326px; width: 92px; height: 42px; }
+.logo_29{ background-position: -10px -1373px; width: 92px; height: 42px; }
+.logo_30{ background-position: -10px -1420px; width: 92px; height: 42px; }
+.logo_31{ background-position: -10px -1467px; width: 92px; height: 42px; }
+.logo_32{ background-position: -10px -1514px; width: 92px; height: 42px; }
+.logo_33{ background-position: -10px -1561px; width: 92px; height: 42px; }
+.logo_34{ background-position: -10px -1608px; width: 92px; height: 42px; }
+.logo_35{ background-position: -10px -1655px; width: 92px; height: 42px; }
+.logo_36{ background-position: -10px -1702px; width: 92px; height: 42px; }
+.logo_37{ background-position: -10px -1749px; width: 92px; height: 42px; }
+.logo_38{ background-position: -10px -1796px; width: 92px; height: 42px; }
+.logo_39{ background-position: -10px -1843px; width: 92px; height: 42px; }
+.logo_40{ background-position: -10px -1890px; width: 92px; height: 42px; }
+.logo_41{ background-position: -10px -1937px; width: 92px; height: 42px; }
+.logo_42{ background-position: -10px -1984px; width: 92px; height: 42px; }
+.logo_43{ background-position: -10px -2031px; width: 92px; height: 42px; }
+.logo_44{ background-position: -10px -2078px; width: 92px; height: 42px; }
+.logo_45{ background-position: -10px -2125px; width: 92px; height: 42px; }
+.logo_46{ background-position: -10px -2172px; width: 92px; height: 42px; }
+.logo_47{ background-position: -10px -2219px; width: 92px; height: 42px; }
+.logo_48{ background-position: -10px -2266px; width: 92px; height: 42px; }
+.logo_49{ background-position: -10px -2313px; width: 92px; height: 42px; }
+.logo_50{ background-position: -10px -2360px; width: 92px; height: 42px; }
+.logo_51{ background-position: -10px -2407px; width: 92px; height: 42px; }
+.logo_52{ background-position: -10px -2454px; width: 92px; height: 42px; }
+.logo_53{ background-position: -10px -2501px; width: 92px; height: 42px; }
+.logo_54{ background-position: -10px -2548px; width: 92px; height: 42px; }
+.logo_55{ background-position: -10px -2595px; width: 92px; height: 42px; }
+.logo_56{ background-position: -10px -2642px; width: 92px; height: 42px; }
+.logo_57{ background-position: -10px -2689px; width: 92px; height: 42px; }
+.logo_58{ background-position: -10px -2736px; width: 92px; height: 42px; }
+.logo_59{ background-position: -10px -2783px; width: 92px; height: 42px; }
+.logo_60{ background-position: -10px -2830px; width: 92px; height: 42px; }
+.logo_61{ background-position: -10px -2877px; width: 92px; height: 42px; }
+.logo_62{ background-position: -10px -2924px; width: 92px; height: 42px; }
+.logo_63{ background-position: -10px -2971px; width: 92px; height: 42px; }
+.logo_64{ background-position: -10px -3018px; width: 92px; height: 42px; }
+.logo_65{ background-position: -10px -3065px; width: 92px; height: 42px; }
+.logo_66{ background-position: -10px -3112px; width: 92px; height: 42px; }
+.logo_67{ background-position: -10px -3159px; width: 92px; height: 42px; }
+.logo_68{ background-position: -10px -3206px; width: 92px; height: 42px; }
+.logo_69{ background-position: -10px -3253px; width: 92px; height: 42px; }
+.logo_70{ background-position: -10px -3300px; width: 92px; height: 42px; }
+.logo_71{ background-position: -10px -3347px; width: 92px; height: 42px; }
+.logo_72{ background-position: -10px -3394px; width: 92px; height: 42px; } /* Ambank */
+.logo_73{ background-position: -10px -3441px; width: 92px; height: 42px; } /* Sacombank */
+
+.logo_1.on,.logo_2.on,.logo_3.on,.logo_4.on,.logo_5.on,.logo_6.on,.logo_7.on,.logo_8.on,.logo_9.on,.logo_10.on,
+.logo_11.on,.logo_12.on,.logo_13.on,.logo_14.on,.logo_15.on,.logo_16.on,.logo_17.on,.logo_18.on,.logo_19.on,.logo_20.on,
+.logo_21.on,.logo_22.on,.logo_23.on,.logo_24.on,.logo_25.on,.logo_26.on,.logo_27.on,.logo_28.on,.logo_29.on,.logo_30.on,
+.logo_31.on,.logo_32.on,.logo_33.on,.logo_34.on,.logo_35.on,.logo_36.on,.logo_37.on,.logo_38.on,.logo_39.on,.logo_40.on,
+.logo_41.on,.logo_42.on,.logo_43.on,.logo_44.on,.logo_45.on,.logo_46.on,.logo_47.on,.logo_48.on,.logo_49.on,.logo_50.on,
+.logo_51.on,.logo_52.on,.logo_53.on,.logo_54.on,.logo_55.on,.logo_56.on,.logo_57.on,.logo_58.on,.logo_59.on,.logo_60.on,
+.logo_61.on,.logo_62.on {
+    background-position-x: -107px;
+}
+
+.browser_ie,.browser_chrome,.browser_firefox {
+	behavior: url('ie6png/iepngfix.htc');
+    background-image: url("img/webbrower.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+	vertical-align: middle;
+    margin: 10px 0 0;
+}
+
+i.browser_ie{ background-position: -40px -60px; width: 40px; height: 42px; }
+i.browser_ie.on{ background-position: -137px -60px; }
+i.browser_chrome{ background-position: -40px -110px; width: 40px; height: 42px; }
+i.browser_chrome.on{ background-position: -137px -110px; }
+i.browser_firefox{ background-position: -40px -160px; width: 40px; height: 42px; }
+i.browser_firefox.on{ background-position: -137px -160px; }
+
+i.browser_ie.on ,i.browser_chrome.on ,i.browser_firefox.on {
+    background-position-x: -137px;
+}
+
+.timer_0,.timer_1,.timer_2,.timer_3,.timer_4,.timer_5,.timer_6,.timer_7,.timer_8,.timer_9,.timer_10,.timer_11,.timer_12,.timer_13,.timer_14,.timer_15,.timer_16,.timer_17,.timer_18,.timer_19,.timer_20,.timer_21,.timer_22,.timer_23,.timer_24,.timer_25,.timer_26,.timer_27,.timer_28,.timer_29,.timer_30,.timer_31,.timer_32,.timer_33,.timer_34,.timer_35,.timer_36,.timer_37,.timer_38,.timer_39,.timer_40,.timer_41,.timer_42,.timer_43,.timer_44,.timer_45,.timer_46,.timer_47,.timer_48,.timer_49,.timer_50,.timer_51,.timer_52,.timer_53,.timer_54,.timer_55,.timer_56,.timer_57,.timer_58,.timer_59,.timer_60,.timer_61,.timer_62,.timer_63
+ { background: url('img/time.png')  no-repeat  top left;
+    display: inline-block;
+	vertical-align: middle;
+	width: 16px; height: 16px; 
+}
+.timer_1	{background-position: 0px 0px;}
+.timer_2	{background-position: -16px 0px;}
+.timer_3	{background-position: -32px 0px;}
+.timer_4	{background-position: -48px 0px;}
+.timer_5	{background-position: -64px 0px;}
+.timer_6	{background-position: -80px 0px;}
+.timer_7	{background-position: -96px 0px;}
+.timer_8	{background-position: -112px 0px;}
+.timer_9	{background-position: -128px 0px;}
+.timer_10	{background-position: -144px 0px;}
+.timer_11	{background-position: 0px -16px;}
+.timer_12	{background-position: -16px -16px;}
+.timer_13	{background-position: -32px -16px;}
+.timer_14	{background-position: -48px -16px;}
+.timer_15	{background-position: -64px -16px;}
+.timer_16	{background-position: -80px -16px;}
+.timer_17	{background-position: -96px -16px;}
+.timer_18	{background-position: -112px -16px;}
+.timer_19	{background-position: -128px -16px;}
+.timer_20	{background-position: -144px -16px;}
+.timer_21	{background-position: 0px -32px;}
+.timer_22	{background-position: -16px -32px;}
+.timer_23	{background-position: -32px -32px;}
+.timer_24	{background-position: -48px -32px;}
+.timer_25	{background-position: -64px -32px;}
+.timer_26	{background-position: -80px -32px;}
+.timer_27	{background-position: -96px -32px;}
+.timer_28	{background-position: -112px -32px;}
+.timer_29	{background-position: -128px -32px;}
+.timer_30	{background-position: -144px -32px;}
+.timer_31	{background-position: 0px -48px;}
+.timer_32	{background-position: -16px -48px;}
+.timer_33	{background-position: -32px -48px;}
+.timer_34	{background-position: -48px -48px;}
+.timer_35	{background-position: -64px -48px;}
+.timer_36	{background-position: -80px -48px;}
+.timer_37	{background-position: -96px -48px;}
+.timer_38	{background-position: -112px -48px;}
+.timer_39	{background-position: -128px -48px;}
+.timer_40	{background-position: -144px -48px;}
+.timer_41	{background-position: 0px -64px;}
+.timer_42	{background-position: -16px -64px;}
+.timer_43	{background-position: -32px -64px;}
+.timer_44	{background-position: -48px -64px;}
+.timer_45	{background-position: -64px -64px;}
+.timer_46	{background-position: -80px -64px;}
+.timer_47	{background-position: -96px -64px;}
+.timer_48	{background-position: -112px -64px;}
+.timer_49	{background-position: -128px -64px;}
+.timer_50	{background-position: -144px -64px;}
+.timer_51	{background-position: 0px -80px;}
+.timer_52	{background-position: -16px -80px;}
+.timer_53	{background-position: -32px -80px;}
+.timer_54	{background-position: -48px -80px;}
+.timer_55	{background-position: -64px -80px;}
+.timer_56	{background-position: -80px -80px;}
+.timer_57	{background-position: -96px -80px;}
+.timer_58	{background-position: -112px -80px;}
+.timer_59	{background-position: -128px -80px;}
+.timer_60	{background-position: -144px -80px;}
+.timer_61	{background-position: 0px -96px;}
+.timer_62	{background-position: -16px -96px;}
+.timer_63	{background-position: -32px -96px;}
+.timer_0	{background-position: -48px -96px;}
+
+
+.main_arrow_left_off {
+	background-position: -25px -52px; width: 14px; height: 30px;
+}
+.main_arrow_left_on {
+	background-position: -41px -52px; width: 14px; height: 30px;
+}
+.main_arrow_right_off {
+	background-position: -57px -52px; width: 14px; height: 30px;
+}
+.main_arrow_right_on {
+	 background-position: -73px -52px; width: 14px; height: 30px;
+
+}

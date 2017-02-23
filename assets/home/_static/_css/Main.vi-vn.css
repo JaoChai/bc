@@ -1,0 +1,130 @@
+﻿*
+{
+	font-size: 12px; font-family: Tahoma,Arial,sans-serif;
+}
+
+input[type="text"],input[type="password"], select, textarea
+{
+	font-size: 12px;
+}
+
+a.link_blue:link ,a.link_blue:visited {
+	font: normal 14px Tahoma,MS Gothic,MS PGothic,MS UI Gothic,MS Mincho,MS PMincho;
+}
+
+a.link_grey:link ,a.link_grey:visited {
+	font: normal 14px Tahoma,MS Gothic,MS PGothic,MS UI Gothic,MS Mincho,MS PMincho;
+}
+
+.headerMember, .headerMember *
+{
+	font-size:12px;
+}
+
+.mainMenu ul#nav li a,.mainMenu ul#nav li a h2
+{
+    font-family: Arial,Tahoma,sans-serif;
+}
+
+.subMenu ul li a
+{
+ 
+}
+
+.message {
+    font-size:15px;
+}
+
+div.title {
+	font: normal 18px Arial,Tahoma,sans-serif;
+}
+
+div.mainMenu div.title
+{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.button_register, .button_login {
+	width: 85px;
+}
+
+.button_register,.button_login,.button,.button_grey,.button_submit {
+	font-size: 12px;
+	font-weight:bold;
+	font-family: Tahoma,Arial,sans-serif;
+}
+
+[class^="button"].big, [class*=" button"].big {
+	font-size: 18px;
+	font-weight:bold;
+	font-family: Arial,Tahoma,sans-serif;
+}
+
+.white_size_50px
+{
+	font-size: 50px;font-family: Arial,Tahoma,sans-serif;
+}
+
+.white_size_24px
+{
+	font-size: 24px;font-family: Arial,Tahoma,sans-serif;
+}
+
+.white_size_18px {
+	font-size: 18px;font-family: Arial,Tahoma,sans-serif;
+}
+
+.white_size_16px {
+	font-size: 16px;font-family: Arial,Tahoma,sans-serif;
+}
+
+.white_size_14px {
+	font-size: 14px;font-family: Arial,Tahoma,sans-serif;
+}
+
+.white_size_12px {
+	font-size: 12px;font-family: Arial,Tahoma,sans-serif;
+}
+
+.dinpro, .dinpro *,  .grahic
+{
+	font-family: Arial,Tahoma,sans-serif;
+}
+
+div.games div.game_button_try a, div.games div.game_button_play a, div.games div.game_progressive
+{
+	font-family: Arial,Tahoma,sans-serif;
+}
+
+
+div.games div.name div.opacity_content div.opacity_content div {
+	font-family: Arial,Tahoma,sans-serif;
+}
+
+ul.side_nav li a, .promotion_group_header , ul.side_nav_year li a, ul.side_nav_month li a {
+	font-family: Tahoma,Arial, Helvetica,sans-serif;
+	line-height:34px;
+}
+
+div.games div.game_progressive {
+	font-size: 12px;
+}
+
+ a.promo_join_btn {
+			font-size:16px !important;
+		}
+
+
+ div.promo_timer.coming_soon, div.promo_timer.finish {
+	font-size: 16px !important;
+}
+
+
+ /***customize for slots width**/
+
+ .mainMenu ul.slots
+{
+	
+}
+

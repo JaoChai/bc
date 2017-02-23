@@ -1,0 +1,138 @@
+body{
+	margin: 0 auto;
+	overflow-x:hidden;
+	/*background:#fff;*/
+}
+p{
+	color: #000;
+	font-size: 20px;
+	margin: 0 auto;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.set1{
+    background: url(../images/fortunespin.white.jpg) #fff no-repeat right 0px;
+}
+.set2{
+    background: url(../images/sundayseries.white.jpg)  #fff no-repeat right 0px;
+}
+.set3{
+    background: url(../images/weekdayspecials.white.jpg) #fff  no-repeat right 0px;
+}
+
+.set1, .set2, .set3{
+/*  transform: scale(1,1.02);
+    -webkit-transform: scale(1,1.02);
+    -moz-transform: scale(1,1.02);*/
+	width: 100%;
+	height: 500px;
+	float: left;
+	position:relative;
+/*	clear: both;
+	background-size: cover; */
+}
+.main-container{
+	width: 960px;
+	background: red;
+	margin: 0 auto;
+}
+.content-bx{
+	float: right;
+	width: 480px;
+	padding-top: 109px;
+	position:relative;
+}
+.content-bx p, .content-bx h1, .content-bx button{
+	text-align: right;
+}
+.content-bx h1{
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 50px;
+	color: #000;
+	font-size: 50px;
+	padding-bottom: 12px;
+}
+.default-font h1, .default-font p{
+/*	font-family:"tahoma";*/
+	font-family: arial;
+}
+.for-cn-font h1{
+	letter-spacing: 9px;
+}
+.for-cn-font p{
+	letter-spacing: 4px;
+}
+.for-jp-font h1{
+	letter-spacing: -3px;
+}
+.newbx{
+	/*width: 94px;*/
+	height: 78px;
+	position: absolute;
+    right: -4px;
+    z-index: 6;
+    top: 0px;
+}
+.wrapper .button.big{
+	margin-top:37px;
+	text-transform: uppercase;
+}
+.content-left{
+	float: left;
+	width: 480px;
+}
+.content-left p, .content-left h1, .content-left button{
+	text-align: left;
+}
+.cardbx{
+	width: 221px;
+	height: 219px;
+	position: absolute;
+    right: 832px;
+    z-index: 5;
+    bottom: -114px;
+}
+.kmfont h1{
+	font-family: arial;
+}
+
+@media screen and (max-width:1366px) {
+	.set1{
+    	background: url(../images/fortunespin.white.jpg)  #fff no-repeat -268px 0;
+	}
+	.set2{
+	    background: url(../images/sundayseries.white.jpg)  #fff no-repeat -373px 0;
+	}
+	.set3{
+	    background: url(../images/weekdayspecials.white.jpg) #fff  no-repeat -240px 0;
+	}
+	.cardbx{
+	    right: 550px;
+	    bottom: -114px;
+	}
+	/*.newbx{
+		right: 190px;
+	}*/
+}
+
+@media screen and (max-width:1366px) {
+	/*.newbx{
+		right: 20px;
+	}*/
+	.cardbx{
+	    right: 426px;
+    bottom: -100px;
+	}	
+}
+
+/*@media screen and (max-width:767px) {
+}
+
+@media screen and (max-width:480px) {
+}*/
+

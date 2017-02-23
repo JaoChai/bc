@@ -1,0 +1,229 @@
+/*
+ * Linkselect "select" style CSS file
+ */
+a.selectbox-link,
+span.selectbox-disabled {
+	display: inline-block;
+	background-color: #252525;
+	/*-moz-background-clip   : padding;
+	-webkit-background-clip: padding-box;
+	background-clip        : padding-box;*/
+	border: 1px solid #404040;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	/*_width: 200px;*/
+	max-width: 200px;
+	height: 22px;
+	line-height: 22px;
+	text-indent: 5px;
+	color: #808080 /*|!important|*/;
+	text-decoration: none;
+	
+	outline: 0 !important;
+	vertical-align: top;
+	/*-khtml-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-moz-user-focus: ignore; 
+	-moz-user-input: disabled;*/ 
+}
+
+a.selectbox-link span.selectbox-link-text,
+span.selectbox-disabled span.selectbox-link-text {
+	background: #252525;
+	color: #808080;
+	display: block;
+	/*margin-right: 22px;*/
+	line-height: 22px;
+	overflow: hidden;
+}
+
+a.selectbox-link span.selectbox-link-icon,
+span.selectbox-disabled span.selectbox-link-icon {
+  /*-moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;*/
+  background: #252525;
+  border-left: 1px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 18px;
+}
+
+a.selectbox-link span.selectbox-link-icon span,
+span.selectbox-disabled span.selectbox-link-icon span {
+	background: url("../img/dropdown-down.gif") no-repeat center center transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* this can be used to support IE8+, Firefox & WebKit
+a.selectbox-link span.selectbox-link-icon span:after,
+span.selectbox-disabled span.selectbox-link-icon span:after {
+  display: block;
+	position: absolute;
+	top: 1px;
+	left: 4px;
+
+	content: '\025BC';
+	color: #888;
+	font-size: 9px;
+}
+*/
+
+a.selectbox-link:hover,
+a.selectbox-link-focus {
+  	outline: 0; /* prevent the link from being outlined */
+}
+
+a.selectbox-link-open {
+	border-color: #404040;
+	outline: 0; /* prevent the link from being outlined */
+/*
+	z-index: 1000;
+*/
+
+	border: 1px solid #404040;
+	/* fix bottom border */
+	border-bottom: 0;
+	padding-bottom: 1px;
+}
+
+a.selectbox-link-open:hover {
+	border-bottom: 0;
+}
+
+a.selectbox-link-open span.selectbox-link-icon {
+	background-color: #252525;
+  border-left: none;
+}
+
+a.selectbox-link-open span.selectbox-link-icon span {
+  background: url("../img/dropdown-up.gif") no-repeat center center transparent;
+}
+
+span.selectbox-disabled {
+	cursor: not-allowed;
+}
+
+.selectbox-container {
+	position: absolute;
+	/* this is required to correctly calculate the width of the container */
+	left: 0; top: 0;
+	display: none;
+	z-index: 50000;
+	/* 
+	 * move the box to align with bottom of input box 
+	 */
+	margin-top: 22px;
+	max-width: 200px;
+	background: #252525;
+	border: 1px solid #404040;
+/*
+	border-top: 0;
+*/
+	top: 29px;
+	left: 0;
+	z-index: 999;
+  /*-moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;*/
+}
+
+.selectbox-container .selectbox-title {
+	position: absolute;
+	right: 0;
+	top: -25px;
+	z-index: 1001;
+	cursor: pointer;
+
+	background-color: #252525;
+	color: #808080 !important;
+
+	white-space: nowrap;
+	display: block;
+	line-height: 1.2em;
+	padding: 0;
+	/*margin: 0 18px 0 0;
+
+	-khtml-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-moz-user-focus: ignore; 
+	-moz-user-input: disabled; */
+}
+
+.selectbox-container .selectbox-title span {
+	display: block;
+  padding: 4px 0;
+}
+
+.selectbox-container .selectbox-scrollable {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	overflow: auto;
+	max-height: 250px;
+	clear: both;
+}
+
+.selectbox-container ul {
+	list-style-type: decimal !important;
+	margin: 0px;
+	padding: 0px;
+}
+
+.selectbox-container ul li.selectbox-selected { 
+	
+}
+
+.selectbox-container ul li.selectbox-current { 
+	background-color: #2a8fbd;
+	color:#fff;
+}
+
+.selectbox-container ul li {
+	display: block;
+	line-height: 1.2em;
+	padding: 5px 7px;
+	margin: 0;
+	list-style: none;
+	color: #808080;
+
+	font-size: 13px;
+
+	cursor: pointer;
+
+	/*-khtml-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-moz-user-focus: ignore; 
+	-moz-user-input: disabled;*/ 
+}
+
+/* fixes for IE6; allows mouseovers beyond text label */
+.selectbox-container ul li span { zoom:1; }
+
+
+/* fixes for IE7; allows clicking beyond text label */
+a.selectbox-link { zoom:1; }
+
+a.selectbox-link, span.selectbox-disabled,a.selectbox-link span.selectbox-link-text,
+span.selectbox-disabled span.selectbox-link-text,.selectbox-container ul li,a.selectbox-link span.selectbox-link-icon, span.selectbox-disabled span.selectbox-link-icon {
+	background: #fff;
+	color: #000;
+}
+a.selectbox-link span.selectbox-link-icon span, span.selectbox-disabled span.selectbox-link-icon span {
+	background: url("../img/white/dropdown-down.gif") no-repeat center center transparent;
+}
+
+
+a.selectbox-link-open span.selectbox-link-icon span {
+	background: url("../img/white/dropdown-up.gif") no-repeat center center transparent;
+}

@@ -1,0 +1,114 @@
+﻿.line_height_32px {
+	line-height: 32px;
+}
+
+.game_menu_2 {
+	position:relative;
+	z-index: 2;
+}
+
+#slot_search {
+	color:#fff;
+	line-height: 28px;
+	width: 266px;
+	height: 28px;
+	background: url('../games/img/search-icon.png') no-repeat 262px center #bbbbbb;
+	padding: 1px 0;
+	padding-right: 20px;
+	border: 0;
+}
+
+#slot_search::-webkit-input-placeholder {
+   color:#fff;
+}
+
+#slot_search:-moz-placeholder { /* Firefox 18- */
+   color:#fff;  
+}
+
+#slot_search::-moz-placeholder {  /* Firefox 19+ */
+   color:#fff;
+}
+
+#slot_search:-ms-input-placeholder {  
+   color:#fff;
+}
+
+.ui-menu .ui-menu-item a {
+	background: #bbb;
+	line-height: 28px;
+	height: 28px;
+	border-color: #bbb;
+	font-size: 18px;
+	color:#505050;
+}
+
+	.ui-menu .ui-menu-item a:hover {
+		color:#fff;
+	}
+
+.ui-widget-content {
+	background: #bbb;
+}
+
+select {
+	max-width: none;
+}
+
+a.selectbox-link span.selectbox-link-text, a.selectbox-link span.selectbox-link-icon {
+	background-color: transparent;
+}
+
+a.selectbox-link, a.selectbox-link *, .selectbox-container, .selectbox-container * {
+	font-size: 18px;
+	line-height: normal;
+}
+
+	a.selectbox-link span.selectbox-link-icon span, span.selectbox-disabled span.selectbox-link-icon span {
+		background: url('../games/img/arrow-down.png') no-repeat center center;
+	}
+
+a.selectbox-link-open span.selectbox-link-icon span {
+	background: url('../games/img/arrow-up.png') no-repeat center center;
+}
+
+a.selectbox-link {
+	border-color: transparent;
+	background-color: transparent;
+	max-width: none;
+	/*text-indent: 0;*/
+	height: 32px;
+}
+
+	a.selectbox-link span.selectbox-link-text, span.selectbox-disabled span.selectbox-link-text {
+		line-height: 32px;
+	}
+
+.selectbox-container {
+	border-color: transparent;
+	background-color: transparent;
+	max-width: none;
+	margin-top: 32px;
+}
+
+	.selectbox-container ul li {
+		background-color: #e0e0e0;
+	}
+
+body.grey a.selectbox-link span.selectbox-link-text {
+	color: #ccc;
+}
+
+body.grey .selectbox-container ul li {
+	background-color: #060606;
+	color: #ccc;
+}
+
+	body.grey .selectbox-container ul li.selectbox-current {
+		background-color: #2a8fbd;
+		color: #fff;
+	}
+
+.selectbox-selected {
+	display:none !important;
+}

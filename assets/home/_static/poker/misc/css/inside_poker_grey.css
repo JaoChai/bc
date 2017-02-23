@@ -1,0 +1,137 @@
+.wrapper_fs h1,.wrapper_ss h1, .wrapper_wds h1{
+	font-size: 30px;
+	color: white;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	font-weight: normal;
+}
+.wrapper_fs h2,.wrapper_ss h2,.wrapper_wds h2{
+	font-size: 18px;
+	margin: 0 auto;
+	color: white;
+	padding-bottom: 15px;
+	font-weight: normal;
+}
+.btm-note{
+	text-align: center;
+	font-size: 11px;
+	line-height: 14px;
+	color: #808080;
+}
+.btm-note span{
+	color: red;
+}
+.inside_main_container{
+	margin: 0 auto;
+	width: 960px;
+}
+.wrapper_fs{
+    background: url(../img/fortunespin_black.jpg)  no-repeat 0px 126px fixed;
+}
+.wrapper_ss{
+	height: auto;
+    background: url(../img/sundayseries_black.jpg)  no-repeat 0px 126px fixed;
+}
+.wrapper_wds{
+	height: auto;
+    background: url(../img/weekdaysspecials_black.jpg)  no-repeat 0px 126px fixed;
+}
+.wrapper_fs, .wrapper_wds, .wrapper_ss{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 50px;
+	width: 100%;
+    float: left;	
+}
+.insdie_nav {
+	width: 100%;
+/*	position: fixed;*/
+	float: left;
+}
+
+.insdie_nav ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.insdie_nav ul li {
+	display: inline-block;
+	padding: 30px 25px 30px 25px; 
+}
+
+.insdie_nav ul li a {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+}
+
+.insdie_nav ul li a:hover, .insdie_nav ul li a:focus, .insdie_nav ul li a.active {
+	padding: 30px 30px 10px 30px;
+	border-bottom: 3px #2a8fbd solid;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+}
+.insdie_nav ul li a i {
+	font-size: 30px; 
+}
+
+.box-holder{
+	width: 100%;
+	display: table;
+	float: left;
+	background: rgba(0, 0, 0, 0.7);
+}
+.bx-inside{
+	padding: 40px;	
+}
+
+.fs_imgbx{
+	width: 769px;
+	margin: 25px 52px;	
+}
+.fs_imgbx img:nth-child(2){
+	float: right;
+}
+
+.navBar {
+	height:30px; 
+	background: #1c6080; 
+	font-size: 14px; 
+	color:#FFF; 
+	font-weight:bold; 
+}
+
+
+.table_bg {
+	background:#333;
+	margin-bottom: 25px;
+	width: 100%;
+}
+.table_bg td, .table_bg tr{
+	text-align: center;
+}
+.table_bg tbody tr:first-child{
+	background:#1c6080;
+	font-weight:bold;
+	font-size: 13px;
+	color: #fff;
+	height:30px;
+} 
+.table_bg tr:nth-child(even){
+	background:#252525;
+	color: #808080;
+	font-size: 13px;
+} 
+.table_bg tr:nth-child(odd){
+	background:#1f1f1f;
+	font-size: 13px;
+}

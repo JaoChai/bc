@@ -1,0 +1,95 @@
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+
+ul.simple-pagination {
+	list-style: none;
+}
+
+.simple-pagination {
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.simple-pagination ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.simple-pagination li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+span.ellipse.clickable {
+	cursor: pointer;
+}
+
+.ellipse input {
+	width: 3em;
+}
+
+
+/*------------------------------------*\
+	Light Theme Styles
+\*------------------------------------*/
+
+.light-theme a, .light-theme span {
+	float: left;
+	color: #2A8FBD;
+	font-size:11px;
+	line-height:24px;
+	font-weight: normal;
+	text-align: center;
+	min-width: 14px;
+	padding: 0 7px;
+	/*margin: 0 5px 0 0;*/
+}
+
+.light-theme a:hover {
+	/*text-decoration: none;
+	background: #FCFCFC;*/
+}
+
+.light-theme .current {
+	color: #FFF;
+	cursor: default;
+	background-image: url('../games/img/progressive/number-selet.png');
+	background-position: 5px 4px;
+	background-repeat: no-repeat;
+}
+
+.light-theme .ellipse {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+
+.simple-pagination .next {
+	background-image: url('../games/img/progressive/arrow-right.png');
+}
+.simple-pagination .prev {
+	background-image: url('../games/img/progressive/arrow-left.png');
+}
+
+.simple-pagination .next,.simple-pagination .prev {
+	background-repeat:no-repeat;
+	background-position: center 6px;
+}
+
+
+	.simple-pagination .next span, .simple-pagination .prev span ,.simple-pagination .next, .simple-pagination .prev{
+		text-indent:-999999px;
+	}
+
+

@@ -1,0 +1,516 @@
+﻿body {
+	background-color: #fff;
+	color: #808080;
+}
+
+.header_background {
+	background-color: #fff;
+}
+
+.footer_background {
+	background-color: #f2f2f2;
+}
+
+iframe {
+	background-color: #eee;
+}
+
+hr {
+	border-top: 1px solid #ccc;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+	color: #808080;
+}
+
+.miscPanel a, .infoPanel a {
+	color: #1f1f1f;
+}
+
+	.miscPanel a:hover, .infoPanel a:hover {
+		color: #38c0ff;
+	}
+
+.subMenu div.opacity_background {
+	background-color: #fdfdfd;
+	border-bottom: 1px solid #ddd;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.90;
+	-khtml-opacity: 0.90;
+	opacity: 0.90;
+}
+
+.subMenu .menuContent a:link, .subMenu .menuContent a:visited {
+	color: #1f1f1f;
+}
+
+.subMenu .menuContent a:hover {
+	color: #38c0ff;
+}
+
+
+.footercontent .footerlink ul li a {
+	color: #404040;
+}
+
+	.footercontent .footerlink ul li a:hover {
+		color: #38c0ff;
+	}
+
+.footer_misc {
+	color: #bfbfbf;
+}
+
+	.footer_misc ul li a {
+		color: #bfbfbf;
+	}
+
+		.footer_misc ul li a:hover {
+			color: #38c0ff;
+		}
+
+.middle {
+	background: #ddd;
+}
+
+/*-----------------------------------jquery valdiate class-------------------------------------------------*/
+div.error, div.success {
+	background: #eee;
+}
+
+div.success {
+	border-color: #38c0ff;
+}
+
+	div.error:after, div.success:after,
+	div.error .after, div.success .after
+	/*, div.success:before ,div.error:before*/ {
+		position: absolute;
+		content: url('img/msgbox_join_blue.white.png');
+		*zoom: expression( this.runtimeStyle.zoom="1", this.innerHTML = "<img src='img/msgbox_join_blue.white.png' />" );
+	}
+
+div.error:after,
+div.error .after {
+	content: url('img/msgbox_join_red.white.png');
+	*zoom: expression( this.runtimeStyle.zoom="1", this.innerHTML = "<img src='img/msgbox_join_red.white.png' />" );
+}
+
+body.contact_us div.error, body.contact_us div.success {
+	background: #fff;
+}
+
+	body.contact_us div.error:after,
+	body.contact_us div.error .after {
+		content: url('img/msgbox_contact_red.white.png');
+		*zoom: expression( this.runtimeStyle.zoom="1", this.innerHTML = "<img src='img/msgbox_contact_red.white.png' />" );
+	}
+
+	body.contact_us div.success:after,
+	body.contact_us div.success .after
+	/*, div.success:before ,div.error:before*/ {
+		content: url('img/msgbox_contact_blue.white.png');
+		*zoom: expression( this.runtimeStyle.zoom="1", this.innerHTML = "<img src='img/msgbox_contact_blue.white.png' />" );
+	}
+
+
+body.contact_us .contact_option li.active:after, .contact_option li.active .after {
+	border-color: #f8f8f8 transparent;
+}
+
+body.contact_us .tab-content-wrap {
+	border: 1px solid #38c0ff;
+}
+/*---------------------------------page sharing class---------------------------------------------*/
+
+div.opacity_background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #ccc;
+	top: 0;
+	left: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+}
+
+div.title.special {
+	color: #1f1f1f;
+	background: #ddd;
+}
+
+div.textContent {
+	background: #fff;
+	color: #404040;
+}
+
+div.first_row div.column {
+	border: 2px solid #bfbfbf;
+}
+
+	div.first_row div.column:hover {
+		border: 2px solid #38c0ff;
+	}
+
+div.bottom_text .white_size_12px {
+	color: #fff;
+}
+
+/*-----------------------------------general class-------------------------------------------------*/
+.white, .white_size_50px, .white_size_24px, .white_size_18px, .white_size_16px, .white_size_14px, .white_size_12px {
+	color: #1f1f1f;
+}
+
+.background-grey {
+	background-color: #eee;
+}
+
+.button_grey {
+	background: #f2f2f2;
+	color: #2a8fbd !important;
+}
+
+	.button_grey:hover {
+		background: #38c0ff !important;
+		color: #fff !important;
+	}
+
+/* ---------------------overwrite bootstrap css----------------------------*/
+.popover.bottom .arrow:after {
+	border-bottom-color: #fafafa;
+}
+
+.popover.top .arrow:after {
+	border-top-color: #eee;
+}
+
+.bottomMenuContainer .popover{
+    background: #eee;
+}
+
+
+.popover.left .arrow:after {
+	border-left-color: #fafafa;
+}
+
+.popover {
+	background: #fafafa;
+}
+
+a.languageOpener {
+	border: 1px solid transparent;
+	*border: 1px solid #eee;
+}
+
+	a.languageOpener.open {
+		border: 1px solid #808080;
+	}
+
+ul.languageSpecial {
+	background: #eee;
+}
+
+	ul.languageSpecial li a:hover {
+		background: #ccc;
+	}
+
+
+a.colorOpener {
+	border: 1px solid transparent;
+	*border: 1px solid #eee;
+}
+
+	a.colorOpener.open {
+		border: 1px solid #808080;
+	}
+
+ul.colorSelector {
+	background: #eee;
+}
+
+	ul.colorSelector li a:hover {
+		background: #ccc;
+	}
+
+/********************/
+.popover-content {
+	color: #1f1f1f;
+}
+
+a#notification span {
+	color: #1f1f1f;
+}
+
+div#announcementFrame div.message > ul > li {
+	color: #1f1f1f;
+}
+
+/* ---------------------game page css ----------------------------*/
+
+ul.game_category li a ,table.game_category a{
+	background: #ccc;
+	color: #404040;
+}
+
+table.game_category td.one_pixel {
+	background: #a6a6a6;
+}
+
+ul.game_category li ~ li {
+	border-left: 1px solid #a6a6a6;
+}
+
+div.games_menu_bg {
+	background: #ccc;
+}
+
+div.games_description {
+	color: #404040;
+}
+
+
+.bottom_text.white_size_14px {
+	color: #fff;
+}
+
+a.game_info {
+	background: #fff;
+	color: #2a8fbd;
+}
+
+	a.game_info:hover {
+		background: #38c0ff !important;
+		color: #fff !important;
+	}
+
+/**promo page***/
+ul.side_nav li a {
+	background: #ccc;
+	color: #404040;
+}
+
+.promotion_group_header {
+	background-color: #ddd;
+	color: #1f1f1f;
+}
+
+.promotion_group_body {
+	background-color: #f8f8f8;
+	color: #1f1f1f;
+}
+
+div.promo_timer {
+	background-color: #ccc;
+	*border: 1px solid #ccc;
+	color: #404040;
+	border-color: #ccc;
+}
+
+	div.promo_timer.coming_soon {
+		background-color: #ddd;
+	}
+
+	div.promo_timer:after, div.promo_timer:before, div.promo_timer .after, div.promo_timer .before {
+		border-right-color: #ccc;
+	}
+
+body.white .rowHeader {
+	background-color: #ccc;
+	color: #404040;
+}
+
+body.white .row1 {
+	background-color: #ddd;
+	color: #404040;
+}
+
+/**************/
+/*****winner page*******/
+ul.side_nav_year li a {
+	color: #808080;
+}
+
+	ul.side_nav_year li a.active, ul.side_nav_year li a:hover {
+		color: #1f1f1f;
+	}
+
+ul.side_nav_month li a {
+	background: #fff;
+	border-bottom: 2px solid #ddd;
+}
+
+.promotion_content .white_size_14px {
+	color: #1f1f1f;
+}
+/*************about us**********/
+body.about_us h6 {
+	color: #404040;
+}
+
+body.about_us img.border {
+	border: 2px solid #bfbfbf;
+}
+/*********************refer friend***************************/
+body.refer_friend .accordion-heading .accordion-toggle, .ui-accordion .ui-accordion-header {
+	background: url("../refer_friend/img/title.white.jpg") #ddd no-repeat !important;
+	color: #1f1f1f !important;
+}
+
+body.refer_friend .ui-widget-content {
+	background: #eee !important;
+	color: #404040 !important;
+}
+
+body.refer_friend .ui-state-default {
+	border: 0 !important;
+}
+
+body.refer_friend a.white_size_16px, a.white_size_12px {
+	color: #1f1f1f !important;
+}
+
+body.refer_friend ul.method li.link {
+	background: url("../refer_friend/img/ico_link.white94a8.png?v20141103") no-repeat;
+}
+
+body.refer_friend ul.method li.email {
+	background: url("../refer_friend/img/ico_mail.white94a8.png?v20141103") no-repeat;
+}
+
+body.refer_friend ul.method li.twitter {
+	background: url("../refer_friend/img/ico_twitter.white94a8.png?v20141103") no-repeat;
+}
+
+body.refer_friend ul.method li.facebook {
+	background: url("../refer_friend/img/ico_fb.white94a8.png?v20141103") no-repeat;
+}
+
+
+body.refer_friend ul.method li.qq {
+	background: url("../refer_friend/img/ico_TencentWeibo.white94a8.png?v20141103") no-repeat;
+}
+
+body.refer_friend ul.method li.weibo {
+	background: url("../refer_friend/img/ico_SinaWeibo.white94a8.png?v20141103") no-repeat;
+}
+
+
+/*****contact us***************/
+.contact_option li.active:after, .contact_option li.active .after {
+	border-color: #eee transparent;
+}
+
+.contact_option li.active:before, .contact_option li.active .before {
+	border-color: #38c0ff transparent;
+	*border-color: #38c0ff #fff;
+}
+/*******************progress bar for game, register n login*************************/
+div.progressBar {
+	background: #eee;
+}
+
+/**********changes for color changer**************/
+div.register_now * {
+	color: #fff;
+}
+
+.first_column * {
+	color: #808080;
+}
+
+.second_column * {
+	color: #808080;
+}
+
+.second_row .caroufredsel_wrapper {
+	background-color: #000;
+}
+
+.footer_line {
+	background: url('img/footer_line.white.gif') repeat-x;
+}
+
+
+#carousel .white_size_14px {
+	color: #fff;
+}
+
+div.bravado_games_cert a div.games_name {
+	color: #1f1f1f !important;
+}
+
+body.promo_claim div.title {
+	color: #1f1f1f;
+}
+
+body.email_friend div.title {
+	color: #1f1f1f;
+}
+
+/***calendar**/
+
+body.calendar {
+}
+
+/**********jackpot loader**************/
+.jackpot_loader {
+	background: url('../games/jackpot/Jackpot-BG.white.png') bottom center no-repeat;
+}
+
+	.jackpot_loader .jackpot_loader_item .jackpot_loader_item_name {
+		color: #808080;
+	}
+
+	.jackpot_loader .jackpot_loader_item:hover .jackpot_loader_item_name {
+		color: #1f1f1f;
+	}
+
+body.home .mainContent {
+	background-color: #fff;
+}
+
+div.popover a.white_size_14px {
+	color: #1f1f1f;
+}
+
+	div.popover a.white_size_14px:hover {
+		color: #38C0FF;
+	}
+
+
+body.contact_us div.textContent {
+	background-color: #f8f8f8;
+}
+
+#announcementFrame2 {
+	background-color: #f2f2f2;
+}
+
+.annoucement_category, .annoucement_footer {
+	background-color: #fff;
+}
+
+	.annoucement_category a.white_size_14px {
+		color: #000;
+	}
+
+
+body.promo_claim {
+	background:#eeeeee;
+}
+
+.marquee {
+    color:#2687b4;
+}
+
+
+
+/*-------Game Launcher---------*/
+
+#divGameOverlay{
+    background:white;
+}

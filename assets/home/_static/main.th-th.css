@@ -1,0 +1,117 @@
+﻿*
+{
+	font-size: 12px; font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+input[type="text"],input[type="password"], select, textarea
+{
+	font-size: 11px;
+}
+
+a.link_blue:link ,a.link_blue:visited {
+	font: normal 14px Tahoma,Arial, Helvetica,sans-serif;
+}
+
+a.link_grey:link ,a.link_grey:visited {
+	font: normal 14px Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.headerMember, .headerMember *
+{
+	font-size:12px;
+}
+
+.mainMenu ul#nav li a,.mainMenu ul#nav li a h2
+{
+    font-size:16px;
+    font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.subMenu ul li a
+{
+
+}
+
+
+.message {
+    font-size:15px;
+}
+
+div.title {
+	font: normal 18px Tahoma,Arial, Helvetica,sans-serif;
+}
+
+div.mainMenu div.title
+{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.button_register, .button_login {
+	width: 150px;
+}
+
+.button_register,.button_login,.button,.button_grey,.button_submit {
+	font-size: 12px;
+	font-weight:bold;
+	font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+[class^="button"].big, [class*=" button"].big {
+	font-size: 18px;
+	font-weight:bold;
+	font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.white_size_50px
+{
+	font-size: 50px;font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.white_size_24px
+{
+	font-size: 24px;font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.white_size_18px {
+	font-size: 18px;font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.white_size_16px {
+	font-size: 16px;font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.white_size_14px {
+	font-size: 14px;font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.white_size_12px {
+	font-size: 12px;font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+.dinpro, .dinpro *,  .grahic
+{
+	font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+div.games div.game_button_try a, div.games div.game_button_play a, div.games div.game_progressive
+{
+	font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+div.games div.name div.opacity_content div.opacity_content div {
+		font-family: Tahoma,Arial, Helvetica,sans-serif;
+}
+
+ul.side_nav li a, .promotion_group_header , ul.side_nav_year li a, ul.side_nav_month li a {
+	font-family: Tahoma,Arial, Helvetica,sans-serif;
+	line-height:34px;
+}
+
+a.promo_join_btn {
+	font-size: 17px !important;
+}
+
+div.promo_timer.coming_soon, div.promo_timer.finish {
+	font-size: 17px !important;
+}
