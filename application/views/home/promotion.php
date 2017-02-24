@@ -1668,7 +1668,7 @@ $(function () {
                   </div>
                   <div class="promotion_group_body">
                     <div class="promotion_group_body_inner">
-                      <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                      <img src="<?php echo base_url('uploads/promotion/'. $row->pro_newimg); ?>" />
                       <div class="promotion_title dinpro">
                         <?php echo $row->pro_title;?>
                       </div>
@@ -1705,7 +1705,7 @@ $(function () {
                     </div>
                     <div class="promotion_group_body">
                       <div class="promotion_group_body_inner">
-                        <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                        <img src="<?php echo base_url('uploads/promotion/'. $row->pro_newimg); ?>" />
                         <div class="promotion_title dinpro">
                           <?php echo $row->pro_title;?>
                         </div>
@@ -1735,7 +1735,7 @@ $(function () {
                     </div>
                     <div class="promotion_group_body">
                       <div class="promotion_group_body_inner">
-                        <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                        <img src="<?php echo base_url('uploads/promotion/'. $row->pro_newimg); ?>" />
                         <div class="promotion_title dinpro">
                           <?php echo $row->pro_title;?>
                         </div>
@@ -1765,7 +1765,7 @@ $(function () {
                     </div>
                     <div class="promotion_group_body">
                       <div class="promotion_group_body_inner">
-                        <img src="<?php echo base_url();?>assets/home/img/promotion-kwantung-1.jpg" />
+                        <img src="<?php echo base_url('uploads/promotion/'. $row->pro_newimg); ?>" />
                         <div class="promotion_title dinpro">
                           <?php echo $row->pro_title;?>
                         </div>
